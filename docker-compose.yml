@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  pdfhero-blog:
+    build: .
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=production
+      - VIRTUAL_HOST=blog.pdf-hero.com
+      - LETSENCRYPT_HOST=blog.pdf-hero.com
+      - LETSENCRYPT_EMAIL=johannes.hinkov@gmail.com
+    networks:
+      - auto-proxy
+
+networks:
+  auto-proxy:
+    external: true
