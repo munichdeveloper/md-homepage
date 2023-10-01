@@ -133,3 +133,19 @@
 .subscribe-box {
   @apply grid md:grid-cols-3 w-full mt-5 md:mt-10 mx-auto py-10 font-bold leading-tight text-center items-center;
 }
+
+.rtl-grid {
+  direction: rtl;
+}
+
+.justify-left {
+  justify-content: left;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+body {
+  background-color: aliceblue;
+}
