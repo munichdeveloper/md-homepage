@@ -25,15 +25,15 @@ export default function SubscribeBox() {
 
     return (
         <form onSubmit={submitForm}>
-            <div className="bg-[#99d6ea52]">
+            <div className="bg-[#00BFFF85]">
                 <div className="subscribe-box container">
                     <div className="py-3 text-xl md:text-2xl">
-                        Abonniere meinen Newsletter!
+                        Newsletter abonnieren:
                     </div>
                     <div className="py-3">
-                        <input type="email" name="email" className="p-2 rounded-[20px] min-w-[5rem] md:min-w-[20rem] leading-7" placeholder="E-Mail Addresse" />
+                        <input type="email" name="email" className="p-2 rounded-[20px] min-w-[2rem] lg:min-w-[20rem] leading-7" placeholder="E-Mail Addresse" />
                     </div>
-                    <div className="py-3">
+                    <div className="py-3 pl-2">
                         <button className="bg-[#f2ff00] py-2 px-4 rounded-[20px] hover:underline leading-10 text-md" type="submit">
                             Zum Newsletter anmelden
                         </button>
