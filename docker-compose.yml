@@ -7,8 +7,8 @@ services:
       - 3000:3000
     environment:
       - NODE_ENV=production
-      - VIRTUAL_HOST=blog.pdf-hero.com
-      - LETSENCRYPT_HOST=blog.pdf-hero.com
+      - VIRTUAL_HOST=munich-developer.de
+      - LETSENCRYPT_HOST=munich-developer.de
       - LETSENCRYPT_EMAIL=johannes.hinkov@gmail.com
     networks:
       - auto-proxy
