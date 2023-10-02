@@ -5,6 +5,7 @@ export default function Profile() {
         <div className='grid md:grid-cols-2 p-3 md:p-8' >
             <div className='center py-5'>
                 <Image
+                    alt='Johannes Hinkov'
                     className="rounded-[9999rem]"
                     width="250"
                     height="250"

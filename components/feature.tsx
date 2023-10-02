@@ -9,7 +9,7 @@ export default function Feature({ rtl, imgSrc, title, text }) {
             <div className='grid justify-center p-5'>
                 <Image className='rounded-[20px]'
                     width={300} height={200}
-                    src={imgSrc} />
+                    src={imgSrc} alt={title} />
             </div>
             <div className="flex items-center">
                 <div className="">
