@@ -13,6 +13,10 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .has-text-align-left {
   @apply text-left;
@@ -43,23 +47,27 @@
 .wp-block-image img {
   @apply max-w-full mt-2;
 }
+
 .wp-block-image.aligncenter {
   @apply text-center;
 }
+
 .wp-block-image.alignfull img,
 .wp-block-image.alignwide img {
   @apply w-full;
 }
+
 .wp-block-image .alignleft,
 .wp-block-image .alignright,
 .wp-block-image .aligncenter,
 .wp-block-image.is-resized {
   @apply table ml-0 mr-0;
 }
-.wp-block-image .alignleft > figcaption,
-.wp-block-image .alignright > figcaption,
-.wp-block-image .aligncenter > figcaption,
-.wp-block-image.is-resized > figcaption {
+
+.wp-block-image .alignleft>figcaption,
+.wp-block-image .alignright>figcaption,
+.wp-block-image .aligncenter>figcaption,
+.wp-block-image.is-resized>figcaption {
   @apply table-caption;
 
   caption-side: bottom;
@@ -68,9 +76,11 @@
 .wp-block-image .alignleft {
   @apply float-left mr-4;
 }
+
 .wp-block-image .alignright {
   @apply float-right ml-4;
 }
+
 .wp-block-image .aligncenter {
   @apply m-auto;
 }
@@ -103,13 +113,14 @@
   @apply grid grid-cols-2 gap-4;
 }
 
-.table_of_content, .cta {
+.table_of_content,
+.cta {
   line-height: 3rem;
   background-color: #99d6ea52;
   @apply p-5 mt-8 rounded-[20px]
 }
 
-.table_of_content > h2 {
+.table_of_content>h2 {
   @apply font-bold mt-0 !important
 }
 
@@ -148,4 +159,21 @@
 
 body {
   background-color: aliceblue;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.arrow {
+  border: solid #00BFFF85;
+  border-width: 0 1rem 1rem 0;
+  display: inline-block;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }

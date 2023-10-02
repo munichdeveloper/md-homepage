@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Script from 'next/script'
 import Footer from './footer'
 import Meta from './meta'
@@ -18,6 +19,9 @@ export default function Layout({ children }) {
           gtag('config', 'G-13CBN0G7M1');
         `}
         </Script>
+        <Head>
+          <title>munich-developer | Quelltext aus München</title>
+        </Head>
         <main>{children}</main>
       </div>
       <SubscribeBox />
