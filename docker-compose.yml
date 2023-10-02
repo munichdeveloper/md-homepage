@@ -1,10 +1,8 @@
 version: '3'
 
 services:
-  pdfhero-blog:
+  md-homepage:
     build: .
-    ports:
-      - 3000:3000
     environment:
       - NODE_ENV=production
       - VIRTUAL_HOST=munich-developer.de
