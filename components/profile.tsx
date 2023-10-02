@@ -18,16 +18,16 @@ export default function Profile() {
                         <i className='text-[#00BFFF85]'>&lt;</i>Hallo, Ich bin Johannes.
                     </div>
                     <div className='pl-3'>
-                        jobTitle=$quot;<b>Senior Software Entwickler</b>$quot;
+                        jobTitle='<b>Senior Software Entwickler</b>'
                     </div>
                     <div className='pl-3'>
-                        location=$quot;<b>München</b>$quot;
+                        location='<b>München</b>'
                     </div>
                     <div className='pl-3'>
-                        experience=$quot;<b> &gt; 10 Jahre</b>$quot;
+                        experience='<b> &gt; 10 Jahre</b>'
                     </div>
                     <div className='pl-3'>
-                        field=$quot;<b>Enterprise Softwareentwicklung</b>$quot;
+                        field='<b>Enterprise Softwareentwicklung</b>'
                     </div>
                     <div className='font-bold text-xl md:text-2xl text-[#00BFFF85]'>/&gt;</div>
                 </div>

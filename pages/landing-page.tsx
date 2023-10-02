@@ -1,11 +1,10 @@
-import Head from "next/head";
+import Link from "next/link";
 import Container from "../components/container";
 import Feature from "../components/feature";
+import Headline from "../components/headline";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
 import Profile from "../components/profile";
-import Headline from "../components/headline";
-import Link from "next/link";
 
 export default function LandingPage() {
     return (
