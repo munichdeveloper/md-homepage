@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <div>
             <div className="font-bold mb-1 mt-7">Über mich</div>
-            <div>Wer ist munich developer?</div>
+            <div>Wer oder was ist munich developer?</div>
           </div>
           <div>
             <div className="font-bold mb-1 mt-7">Social Media</div>
