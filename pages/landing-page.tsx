@@ -11,7 +11,7 @@ export default function LandingPage() {
         <Layout>
             <div className="min-h-screen">
                 <Intro />
-                <div className="max-w-[55rem] mx-auto md:py-10" >
+                <div className="max-w-[55rem] lg:max-w-[70rem] mx-auto md:py-10" >
                     <Profile />
                     <div className="md:p-20">
                         <div className="center font-bold text-2xl md:text-5xl md:pt-10">... und hierbei unterstütze ich Sie gerne!</div>
@@ -63,6 +63,16 @@ export default function LandingPage() {
                             title="Portfolio Website"
                             text="Portfolio Seite für z.B. Bewerbungen"
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg" rtl={false} />
+                    </div>
+                </Container>
+
+                <Headline title="Sonstiges" subtitle="Hosting, Monitoring, usw." />
+                <Container>
+                    <div className="max-w-5xl mx-auto">
+                        <Feature
+                            title="Hosting & Monitoring"
+                            text="Individuelle Lösungen und Angebote um ihre Apps durch uns hosten und monitoren zu lassen"
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg" rtl={true} />
                     </div>
                 </Container>
 

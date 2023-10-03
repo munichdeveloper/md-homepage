@@ -13,8 +13,8 @@ export default function Profile() {
                 />
             </div>
             <div className='flex justify-center'>
-                <div className='grid content-center'>
-                    <div className='font-bold text-xl md:text-2xl'>
+                <div className='grid content-center lg:gap-y-4'>
+                    <div className='font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl'>
                         <i className='text-[#00BFFF85]'>&lt;</i>Hallo, Ich bin Johannes.
                     </div>
                     <div className='pl-3'>

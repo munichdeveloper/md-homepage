@@ -13,11 +13,6 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .has-text-align-left {
   @apply text-left;
 }
@@ -176,4 +171,8 @@ body {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.bgprofile {
+  background-image: url('https://nft-miner.com/wp-content/uploads/2023/10/3394-scaled.jpg');
 }
