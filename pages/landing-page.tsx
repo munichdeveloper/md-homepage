@@ -1,20 +1,20 @@
 import Link from "next/link";
 import Container from "../components/container";
+import Entry from "../components/entry";
 import Feature from "../components/feature";
 import Headline from "../components/headline";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import Profile from "../components/profile";
 
 export default function LandingPage() {
     return (
         <Layout>
             <div className="min-h-screen">
                 <Intro />
-                <div className="max-w-[55rem] lg:max-w-[70rem] mx-auto md:py-10" >
-                    <Profile />
-                    <div className="md:p-20">
-                        <div className="center font-bold text-2xl md:text-5xl md:pt-10">... und hierbei unterstütze ich Sie gerne!</div>
+                <div className="max-w-[80rem] lg:max-w-[100rem] mx-auto md:py-10" >
+                    <Entry />
+                    <div className="md:px-20">
+                        <div className="center font-bold text-2xl md:text-5xl md:pt-10">... und hierbei unterstütze ich Dich gerne!</div>
                         <div className="center pb-10 md:pb-12">
                             <Link href="#features">
                                 <i className="arrow down p-[20px] md:p-[2rem]"></i>
@@ -28,13 +28,13 @@ export default function LandingPage() {
                     z.B.: Softr, Bubble, Airtable, Make (Integromat), Zapier usw." />
                 <Container>
                     <div className="max-w-5xl mx-auto">
-                    <Feature
+                        <Feature
                             title="No- / Low-Code App Entwicklung"
                             text="Webapp Entwicklung unter Einsatz von No- bzw. Low-Code Plattformen"
                             orderFirst={false}
-                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/5995339-scaled.jpg"
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/4421964.jpg    "
                         />
-                         <Feature
+                        <Feature
                             title="No- / Low-Code Migration"
                             text="Daten in oder aus einer No- / Low-Code Anwendung migrieren"
                             orderFirst={true}
@@ -43,7 +43,7 @@ export default function LandingPage() {
                         <Feature
                             title="No- / Low-Code Consulting"
                             text="Beratung zu möglichen Einsatzszenarien von No- und / oder Low-Code"
-                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/4380747.jpg" 
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/4380747.jpg"
                             orderFirst={false} />
                     </div>
                 </Container>
@@ -54,13 +54,18 @@ export default function LandingPage() {
                         <Feature
                             title="Landing Page"
                             text="Landing Page mit Hero section, Email / Newsletter Subscription"
-                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/OKP5E50.jpg" 
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/OKP5E50.jpg"
                             orderFirst={false} />
                         <Feature
                             title="Blog mit NextJS + Wordpress Backend"
                             text="Blog umgesetzt mit NextJS Frontend und einem Wordpress Backend"
                             orderFirst={true}
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/6597472-scaled.jpg" />
+                        <Feature
+                            title="Authentifizierung"
+                            text="Authentifizierung mit React / NextJS und Spring Boot über z.B. Magic Links"
+                            orderFirst={false}
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/5101874.jpg" />
                     </div>
                 </Container>
 
@@ -81,13 +86,13 @@ export default function LandingPage() {
                         <Feature
                             title="Softwareentwicklung Abo"
                             text="Monatliche / Jährlich laufende Abos mit abgestimmten Meilensteinen und Lieferungen. Individuelle Vereinbarungen."
-                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg" 
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg"
                             orderFirst={true}
                         />
                         <Feature
                             title="Hosting & Monitoring"
                             text="Individuelle Lösungen und Angebote um ihre Apps durch uns hosten und monitoren zu lassen"
-                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg" 
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg"
                             orderFirst={false}
                         />
                     </div>

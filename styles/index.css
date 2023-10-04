@@ -130,6 +130,9 @@
 .cta-button {
   @apply bg-[#f2ff00] rounded-[20px] p-3 font-bold leading-tight text-center;
   line-height: 150%;
+  border-style: dashed;
+  border-color: black;
+  border-width: 2px;
 }
 
 .cta-button:hover {
@@ -137,7 +140,7 @@
 }
 
 .subscribe-box {
-  @apply grid md:grid-cols-3 w-full mt-5 md:mt-10 mx-auto py-10 font-bold leading-tight text-center items-center;
+  @apply grid md:grid-cols-3 w-full mt-[5rem] md:mt-[10rem] mx-auto py-10 font-bold leading-tight text-center items-center;
 }
 
 .rtl-grid {
@@ -153,7 +156,7 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #778899;
 }
 
 .center {
@@ -163,7 +166,7 @@ body {
 }
 
 .arrow {
-  border: solid #00BFFF85;
+  border: solid #f2ff007d;
   border-width: 0 1rem 1rem 0;
   display: inline-block;
 }
@@ -175,4 +178,28 @@ body {
 
 .bgprofile {
   background-image: url('https://nft-miner.com/wp-content/uploads/2023/10/3394-scaled.jpg');
+}
+
+ul.cloud a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: var(--color);
+  transform: translate(-50%, 0);
+  opacity: 0.15;
+  transition: width 0.25s;
+}
+
+ul.cloud a:focus::before,
+ul.cloud a:hover::before {
+  width: 100%;
+}
+
+@media (prefers-reduced-motion) {
+  ul.cloud * {
+    transition: none !important;
+  }
 }
