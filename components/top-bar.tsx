@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function TopBar() {
   return (
-    <div className='px-10 mb-10 text-center bg-[#f2ff007d]'>
+    <div className='px-10 mb-10 text-center bg-[#f2ff00]'>
       <div className="items-center md:justify-between mb-0">
         <h1 className="justify-center text-[#778899] text-[2.2rem] md:text-8xl font-bold tracking-tighter leading-tight md:leading-[5rem] md:pr-8">
           munich developer

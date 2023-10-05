@@ -11,8 +11,8 @@ export default function Feature({ orderFirst, imgSrc, title, text }) {
             </div>
             <div className="flex flex-1 items-center">
                 <div className="">
-                    <div className="text-2xl md:text-5xl font-bold leading-[2rem] grid text-center mb-[1.3rem]">{title}</div>
-                    <div className='leading-7 text-xl md:text-2xl mb-[0.6rem] text-center'>{text}</div>
+                    <div className="text-2xl md:text-5xl font-bold leading-[2rem] md:leading-10 grid text-center mb-[1.3rem]">{title}</div>
+                    <div className='leading-7 text-xl md:text-2xl mb-[0.6rem] md:mb-[1rem] text-center'>{text}</div>
                     <div className='text-center'>
                         <button className='font-bold bg-[#f2ff00] py-2 px-4 rounded-[20px] hover:underline leading-[2rem] text-md'>
                             Mehr erfahren

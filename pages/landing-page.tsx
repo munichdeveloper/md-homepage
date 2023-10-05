@@ -29,7 +29,7 @@ export default function LandingPage() {
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <Feature
-                            title="No- / Low-Code App Entwicklung"
+                            title="Entwicklung einer No- / Low-Code Webanwendung"
                             text="Webapp Entwicklung unter Einsatz von No- bzw. Low-Code Plattformen"
                             orderFirst={false}
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/4421964.jpg    "
@@ -47,6 +47,13 @@ export default function LandingPage() {
                             orderFirst={false} />
                     </div>
                 </Container>
+
+                {/* <Headline title="Künstliche Intelligenz & ChatGPT" subtitle="Effizienzsteigerung im Unternehmen mit KI" />
+                <Container>
+                    <div className="max-w-5xl mx-auto">
+                      
+                    </div>
+                </Container> */}
 
                 <Headline title="Startup" subtitle="Softwarekomponenten für Startups und KMUs" />
                 <Container>
@@ -75,6 +82,24 @@ export default function LandingPage() {
                         <Feature
                             title="Portfolio Website"
                             text="Portfolio Seite für z.B. Bewerbungen"
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg"
+                            orderFirst={false} />
+                    </div>
+                    <div className="max-w-5xl mx-auto">
+                        <Feature
+                            title="Leightweight CRM"
+                            text="Schnelle und einfache CRM Lösungen für den schmalen Taler"
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg"
+                            orderFirst={true} />
+                    </div>
+                </Container>
+
+                <Headline title="Webscraping" subtitle="Daten direkt von Websites auslesen und gewinnbringend im eigenen Unternehmen nutzen" />
+                <Container>
+                    <div className="max-w-5xl mx-auto">
+                        <Feature
+                            title="Webscraper Softwarepaket"
+                            text="Webscraper auf Basis von Selenium oder No-Code, z.B. Bardeen AI "
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg"
                             orderFirst={false} />
                     </div>
