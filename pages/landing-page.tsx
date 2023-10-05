@@ -3,14 +3,14 @@ import Container from "../components/container";
 import Entry from "../components/entry";
 import Feature from "../components/feature";
 import Headline from "../components/headline";
-import Intro from "../components/intro";
+import TopBar from "../components/top-bar";
 import Layout from "../components/layout";
 
 export default function LandingPage() {
     return (
         <Layout>
             <div className="min-h-screen">
-                <Intro />
+                <TopBar />
                 <div className="max-w-[80rem] lg:max-w-[100rem] mx-auto md:py-10" >
                     <Entry />
                     <div className="md:px-20">

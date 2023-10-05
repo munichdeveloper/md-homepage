@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Container from "../components/container";
-import Intro from "../components/intro";
+import TopBar from "../components/top-bar";
 import Layout from "../components/layout";
 import PostTitle from "../components/post-title";
 import Image from 'next/image'
@@ -17,7 +17,7 @@ export default function SubscriptionConfirmation() {
                     <>
                         <article>
                             <div className="mb-[5rem] md:mb-[10rem]">
-                                <Intro />
+                                <TopBar />
                                 <section className="flex items-center flex-col">
                                     <h1 className="text-2xl md:text-5xl font-bold md:pb-10 text-center">Vielen Dank für Dein Interesse!</h1>
                                     <div className="p-5 md:p-8">
