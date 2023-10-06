@@ -37,7 +37,7 @@ export default function SubscriptionConfirmation() {
                                             Solltest du keine Mail erhalten, schau bitte in Deinem Spam Ordner nach.
                                         </div>
                                         <div>
-                                            Falls Du dann immer noch keine Mail von uns findest, schreib mich gerne an:
+                                            Falls Du dann immer noch keine Mail von mir findest, schreib mich gerne an:
                                         </div>
                                         <div className="font-bold">
                                             info@munich-developer.de

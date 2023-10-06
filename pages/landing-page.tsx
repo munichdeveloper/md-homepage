@@ -11,7 +11,7 @@ export default function LandingPage() {
         <Layout>
             <div className="min-h-screen">
                 <TopBar />
-                <div className="max-w-[80rem] lg:max-w-[100rem] mx-auto md:py-10" >
+                <div className="max-w-[80rem] lg:max-w-[100rem] mx-auto md:py-3" >
                     <Entry />
                     <div className="md:px-20">
                         <div className="center font-bold text-2xl md:text-5xl md:pt-10">... und hierbei unterstütze ich Dich gerne!</div>
