@@ -20,7 +20,7 @@ export default function Blog({ posts }) {
                         <>
                             {posts && posts.length && <article>
                                 {posts.map(({ node }) =>
-                                    <PostCard post={node} />
+                                    <PostCard key={node.id} post={node} />
                                 )}
                             </article>}
                         </>
@@ -37,7 +37,6 @@ export const getStaticProps: GetStaticProps = async ({
     previewData,
 }) => {
     const posts = await getAllPostsForHome(preview)
-    console.log(posts.edges)
     return {
         props: {
             preview,
