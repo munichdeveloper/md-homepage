@@ -10,6 +10,7 @@ export default function SubscriptionConfirmation() {
 
     return (
         <Layout>
+            <TopBar />
             <Container>
                 {router.isFallback ? (
                     <PostTitle>Loading…</PostTitle>
@@ -17,7 +18,7 @@ export default function SubscriptionConfirmation() {
                     <>
                         <article>
                             <div className="mb-[5rem] md:mb-[10rem]">
-                                <TopBar />
+
                                 <section className="flex items-center flex-col">
                                     <h1 className="text-2xl md:text-5xl font-bold md:pb-10 text-center">Vielen Dank für Dein Interesse!</h1>
                                     <div className="p-5 md:p-8">
@@ -30,7 +31,7 @@ export default function SubscriptionConfirmation() {
                                         height={300}
                                         alt="Image by benzoix"
                                         src="https://nft-miner.com/wp-content/uploads/2023/09/well-done-handsome-bearded-man-showing-thumb-up-praising-good-work-recommend-excellent-product-like-scaled.jpg"
-                                        className="rounded-[20px]"
+                                        className="rounded-[999rem]"
                                     />
                                     <div className="text-center text-sm mt-5">
                                         <div>

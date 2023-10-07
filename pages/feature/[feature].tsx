@@ -25,8 +25,8 @@ export default function FeaturePage({ posts }) {
                     <>
                         <article>
                             {posts.map(post => (
-                                <Link href={post.url} target="_blank">
-                                    <div key={post.id} className="flex flex-col md:flex-row bg-accent-1 rounded-[0.2rem] p-5">
+                                <Link key={post.id} href={post.url} target="_blank">
+                                    <div className="flex flex-col md:flex-row bg-accent-1 rounded-[0.2rem] p-5">
                                         <div className="md:max-w-[30%] md:mr-5 flex items-center">
                                             <CoverImage title={title} coverImage={post.image} />
                                         </div>
