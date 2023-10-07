@@ -24,11 +24,12 @@ export default function LandingPage() {
                 </div>
             </div>
             <div id="features">
-                <Headline title="No- und Low-Code" subtitle="Software Komponenten und Funktionalitäten aus dem No- und Low-Code Bereich,
+                <Headline id="nolowcode" title="No- und Low-Code" subtitle="Software Komponenten und Funktionalitäten aus dem No- und Low-Code Bereich,
                     z.B.: Softr, Bubble, Airtable, Make (Integromat), Zapier usw." />
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <Feature
+                            link="#nolowcode"
                             title="Entwicklung einer No- / Low-Code Webanwendung"
                             text="Webapp Entwicklung unter Einsatz von No- bzw. Low-Code Plattformen"
                             orderFirst={false}
@@ -44,68 +45,89 @@ export default function LandingPage() {
                             title="No- / Low-Code Consulting"
                             text="Beratung zu möglichen Einsatzszenarien von No- und / oder Low-Code"
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/4380747.jpg"
-                            orderFirst={false} />
+                            orderFirst={false}
+                        />
                     </div>
                 </Container>
 
-                {/* <Headline title="Künstliche Intelligenz & ChatGPT" subtitle="Effizienzsteigerung im Unternehmen mit KI" />
+                <Headline id="ki" title="Künstliche Intelligenz & ChatGPT" subtitle="Effizienzsteigerung im Unternehmen mit KI" />
                 <Container>
                     <div className="max-w-5xl mx-auto">
-                      
+                        <Feature
+                            title="Einfache Kommunikation zwischen Mensch und Maschine"
+                            text="Schnittstellen im Handumdrehen für Menschen zugänglich machen"
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/36674.jpg"
+                            orderFirst={true}
+                        />
                     </div>
-                </Container> */}
+                </Container>
 
-                <Headline title="Startup" subtitle="Softwarekomponenten für Startups und KMUs" />
+                <Headline id="startup" title="Startup" subtitle="Softwarekomponenten für Startups und KMUs" />
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <Feature
                             title="Landing Page"
                             text="Landing Page mit Hero section, Email / Newsletter Subscription"
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/OKP5E50.jpg"
-                            orderFirst={false} />
+                            orderFirst={false}
+                        />
+                        <Feature
+                            title="React Design & Layout"
+                            text="Ein React Design und das Layout erstellen aus Vorlage, z.B. Figma"
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/8090.jpg"
+                            orderFirst={true}
+                        />
                         <Feature
                             title="Blog mit NextJS + Wordpress Backend"
                             text="Blog umgesetzt mit NextJS Frontend und einem Wordpress Backend"
-                            orderFirst={true}
-                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/6597472-scaled.jpg" />
+                            orderFirst={false}
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/6597472-scaled.jpg"
+                        />
                         <Feature
+                            link="/feature/auth"
                             title="Authentifizierung"
                             text="Authentifizierung mit React / NextJS und Spring Boot über z.B. Magic Links"
-                            orderFirst={false}
-                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/5101874.jpg" />
+                            orderFirst={true}
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/5101874.jpg"
+                        />
                     </div>
                 </Container>
 
-                <Headline title="Creatives" subtitle="Softwarekomponenten für Kreative und Selbstständige" />
+                <Headline title="Creatives" id="creatives" subtitle="Softwarekomponenten für Kreative und Selbstständige" />
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <Feature
+                            link="#creatives"
                             title="Portfolio Website"
                             text="Portfolio Seite für z.B. Bewerbungen"
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg"
-                            orderFirst={false} />
+                            orderFirst={false}
+                        />
                     </div>
                     <div className="max-w-5xl mx-auto">
                         <Feature
+                            link="#creatives"
                             title="Leightweight CRM"
                             text="Schnelle und einfache CRM Lösungen für den schmalen Taler"
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg"
-                            orderFirst={true} />
+                            orderFirst={true}
+                        />
                     </div>
                 </Container>
 
-                <Headline title="Webscraping" subtitle="Daten direkt von Websites auslesen und gewinnbringend im eigenen Unternehmen nutzen" />
+                <Headline id="scraping" title="Webscraping" subtitle="Daten direkt von Websites auslesen und gewinnbringend im eigenen Unternehmen nutzen" />
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <Feature
-                            title="Webscraper Softwarepaket"
+                            title="Webscraping & Data-Mining"
                             text="Webscraper auf Basis von Selenium oder No-Code, z.B. Bardeen AI "
-                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg"
-                            orderFirst={false} />
+                            imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/2150405630.jpg"
+                            orderFirst={false}
+                        />
                     </div>
                 </Container>
 
-                <Headline title="Sonstiges" subtitle="Software-Abo, Hosting, Monitoring, usw." />
+                <Headline id="other" title="Sonstiges" subtitle="Software-Abo, Hosting, Monitoring, usw." />
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <Feature
@@ -122,7 +144,6 @@ export default function LandingPage() {
                         />
                     </div>
                 </Container>
-
             </div>
         </Layout>
     )

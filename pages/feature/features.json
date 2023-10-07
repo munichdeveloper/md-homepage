@@ -1,0 +1,10 @@
+{
+    "auth": {
+        "own_resources": {},
+        "external_resources": {
+            "dev.to": [
+                "https://dev.to/api/articles/1583796"
+            ]
+        }
+    }
+}

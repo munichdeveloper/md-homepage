@@ -10,7 +10,7 @@ export default function Entry() {
                 Senior Software Entwickler.
             </div>
             <div className="flex justify-center max-w-[70rem] mx-auto">
-                <Image className='w-full px-5 pb-10 md:pb-0 md:px-[10rem] pt-10'
+                <Image className='w-full px-5 pb-10 md:pb-0 md:px-[10rem] pt-10 rounded-[14rem]'
                     width={1049}
                     height={682}
                     quality={100}

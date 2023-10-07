@@ -32,7 +32,7 @@ export default function Post({ post, posts }) {
             <article>
               <Head>
                 <title>
-                  {`${post.title} | Awesome PDF file processing`}
+                  {`${post.title} | Quelltext aus München`}
                 </title>
                 <meta
                   property="og:image"

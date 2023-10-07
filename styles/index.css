@@ -155,10 +155,6 @@
   justify-content: right;
 }
 
-body {
-  background-color: #778899;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -166,7 +162,7 @@ body {
 }
 
 .arrow {
-  border: solid #f2ff00;
+  border: solid #778899;
   border-width: 0 1rem 1rem 0;
   display: inline-block;
 }
