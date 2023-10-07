@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-accent-1 border-t border-accent-2">
       <Container>
-        <div className="py-10 md:py-14 grid grid-cols-1 md:grid-cols-5">
+        <div className="py-10 md:py-14 grid gap-x-2 rid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           <div>
             <div className="font-bold mb-1 mt-7">Links</div>
             <div><Link href="/blog">Blog</Link></div>
@@ -16,7 +16,7 @@ export default function Footer() {
             <div>(DE) +49 176 / 55 14 42 07</div>
           </div>
           <div>
-            <div className="font-bold mb-1 mt-7">Über mich</div>
+            <div className="font-bold mb-1 mt-7">Über munich-developer.de</div>
             <div>Wer oder was ist munich developer?</div>
           </div>
           <div>
