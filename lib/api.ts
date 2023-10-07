@@ -47,7 +47,7 @@ export async function getPreviewPost(id, idType = 'DATABASE_ID') {
 export async function getAllPostsWithSlug() {
   const data = await fetchAPI(`
     {
-      posts(first: 10000) {
+      posts(first: 10000, where: {categoryName: "munichdev" }) {
         edges {
           node {
             slug

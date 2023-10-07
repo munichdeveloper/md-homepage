@@ -6,7 +6,7 @@ import Date from '../../components/date'
 import Layout from "../../components/layout"
 import PostTitle from "../../components/post-title"
 import TopBar from "../../components/top-bar"
-import features from "./features.json"
+import features from "../../features.json"
 import Tags from "../../components/tags"
 import Link from "next/link"
 

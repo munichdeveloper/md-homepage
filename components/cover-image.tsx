@@ -4,11 +4,7 @@ import Link from 'next/link'
 
 interface Props {
   title: string
-  coverImage: {
-    node: {
-      sourceUrl: string
-    }
-  }
+  coverImage: string
   slug?: string
 }
 
