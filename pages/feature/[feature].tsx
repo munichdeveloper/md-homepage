@@ -23,9 +23,9 @@ export default function FeaturePage({ dePosts, enPosts }) {
                                 <PostTitle>Artikel auf Englisch</PostTitle>
                             </div>
                             <article>
-                                {enPosts.map(post =>
+                                {enPosts && enPosts.length && enPosts.map(post =>
                                     <Link key={post.id} href={post.url} target="_blank">
-                                        <PostCard post={post} />
+                                        <PostCard key={post.id} post={post} image={post.image} />
                                     </Link>
                                 )}
                             </article>

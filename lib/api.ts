@@ -66,6 +66,7 @@ export async function getAllPostsForHome(preview) {
       posts(first: 20, where: { orderby: { field: DATE, order: DESC }, categoryName: "munichdev" }) {
         edges {
           node {
+            id
             title
             excerpt
             slug
