@@ -28,7 +28,7 @@ export default function Blog({ posts }) {
                             }
                             {
                                 (!posts || posts.length <= 0) &&
-                                <div className="text-center font-bold">
+                                <div className="text-center font-bold md:text-2xl">
                                     <div className="p-1">Noch keine Beiträge in dieser Kategorie vorhanden.</div>
                                     <div className="p-1">Abonniere den Newsletter, um gleich benachrichtigt zu werden, sobald es was neues gibt!</div>
                                     <div className="center pb-10 md:pb-12">
