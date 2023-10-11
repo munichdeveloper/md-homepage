@@ -21,7 +21,7 @@ export default function Blog({ posts }) {
                                 <article>
                                     {posts.map(({ node }) =>
                                         <div key={node.id}>
-                                            <PostCard post={node} image={node.featuredImage.node.sourceUrl} />
+                                            <PostCard link={`/posts/${node.slug}`} post={node} image={node.featuredImage.node.sourceUrl} />
                                         </div>
                                     )}
                                 </article>

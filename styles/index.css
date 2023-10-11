@@ -199,3 +199,24 @@ ul.cloud a:hover::before {
     transition: none !important;
   }
 }
+
+.table_of_content,
+.cta {
+  line-height: 3rem;
+  background-color: #99d6ea52;
+  @apply p-5 mt-8 rounded-[20px]
+}
+
+.table_of_content>h2 {
+  @apply font-bold mt-0 !important
+}
+
+.aligncenter {
+  @apply mx-auto;
+}
+
+img[class*="wp-image-"] {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
+}

@@ -26,12 +26,12 @@
   @apply list-decimal;
 }
 
-.content ul > li > ul,
-.content ol > li > ol {
+.content ul>li>ul,
+.content ol>li>ol {
   @apply my-0 ml-4;
 }
 
-.content ul > li > ul {
+.content ul>li>ul {
   list-style: circle;
 }
 

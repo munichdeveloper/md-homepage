@@ -1,15 +1,12 @@
-import Link from 'next/link'
 import styles from './post-body.module.css'
 
-export default function PostBody({ content, link = '#' }) {
+export default function PostBody({ content }) {
   return (
-    <Link href={link} target='_blank'>
-      <div className="max-w-2xl mx-auto">
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{ __html: content + ' <b>[weiter lesen..]</b>' }}
-        />
-      </div>
-    </Link>
+    <div className="max-w-4xl mx-auto">
+      <div
+        className={styles.content}
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    </div>
   )
 }

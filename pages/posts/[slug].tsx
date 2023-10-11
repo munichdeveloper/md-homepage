@@ -41,7 +41,7 @@ export default function Post({ post, posts }) {
               </Head>
               <PostHeader
                 title={post.title}
-                coverImage={post.featuredImage}
+                coverImage={post.featuredImage?.node?.sourceUrl}
                 date={post.date}
               />
               <PostBody content={post.content} />

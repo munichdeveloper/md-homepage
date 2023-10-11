@@ -6,7 +6,6 @@ import PostCard from "../../components/post-card"
 import PostTitle from "../../components/post-title"
 import TopBar from "../../components/top-bar"
 import features from "../../features.json"
-import Link from "next/link"
 
 export default function FeaturePage({ dePosts, enPosts }) {
     const router = useRouter()
@@ -24,9 +23,7 @@ export default function FeaturePage({ dePosts, enPosts }) {
                             </div>
                             <article>
                                 {enPosts && enPosts.length && enPosts.map(post =>
-                                    <Link key={post.id} href={post.url} target="_blank">
-                                        <PostCard key={post.id} post={post} image={post.image} />
-                                    </Link>
+                                    <PostCard link={post.url} key={post.id} post={post} image={post.image} />
                                 )}
                             </article>
                         </>
