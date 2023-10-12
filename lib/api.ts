@@ -51,6 +51,11 @@ export async function getAllPostsWithSlug() {
         edges {
           node {
             slug
+            tags {
+              nodes {
+                name
+              }
+            }
           }
         }
       }

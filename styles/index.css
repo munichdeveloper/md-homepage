@@ -128,7 +128,7 @@
 }
 
 .cta-button {
-  @apply bg-[#f2ff00] rounded-[20px] p-3 font-bold leading-tight text-center;
+  @apply bg-[#f2ff00] rounded-[20px] p-3 font-bold leading-tight text-center md:text-xl;
   line-height: 150%;
   border-style: dashed;
   border-color: black;
@@ -140,7 +140,7 @@
 }
 
 .subscribe-box {
-  @apply grid md:grid-cols-3 w-full mt-[5rem] md:mt-[10rem] mx-auto py-10 font-bold leading-tight text-center items-center;
+  @apply grid md:grid-cols-3 w-full mx-auto py-10 font-bold leading-tight text-center items-center;
 }
 
 .rtl-grid {
@@ -219,4 +219,8 @@ img[class*="wp-image-"] {
   border-radius: 10px;
   border-width: 1px;
   border-color: black;
+}
+
+.footer-block-title {
+  @apply font-bold mb-1 mt-7
 }

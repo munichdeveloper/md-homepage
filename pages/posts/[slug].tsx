@@ -45,8 +45,8 @@ export default function Post({ post, posts }) {
                 date={post.date}
               />
               <PostBody content={post.content} />
-              <footer>
-                {post.tags.edges.length > 0 && <Tags tags={post.tags.edges} />}
+              <footer className='p-5 md:p-10'>
+                {post.tags.edges.length > 0 && <Tags tags={post.tags.edges.map(edge => ({ name: edge.node.name }))} />}
               </footer>
             </article>
 

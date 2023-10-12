@@ -31,23 +31,25 @@ export default function SubscribeBox() {
     }
 
     return (
-        <form onSubmit={submitForm}>
-            <div className="bg-[#f2ff0095]">
-                <div className="subscribe-box container">
-                    <div className="py-3 text-xl md:text-2xl">
-                        Newsletter abonnieren:
-                    </div>
-                    <div className="py-3">
-                        <input onFocus={() => setShowError(false)} type="email" name="email" className="p-2 rounded-[20px] min-w-[2rem] lg:min-w-[20rem] leading-7 border-black border-2" placeholder="E-Mail Addresse" />
-                        {showError && <div className='text-red-600'>Bitte eine E-Mail Adresse eintragen</div>}
-                    </div>
-                    <div className="py-3">
-                        <button className="bg-[#f2ff00] py-2 px-4 rounded-[20px] hover:underline leading-10 text-md cta-button" type="submit">
-                            Zum Newsletter anmelden
-                        </button>
+        <div className='pt-10 md:pt-[8rem]'>
+            <form onSubmit={submitForm}>
+                <div className="bg-[#f2ff0095] border-t border-accent1">
+                    <div className="subscribe-box container">
+                        <div className="py-3 text-xl md:text-2xl">
+                            Newsletter abonnieren:
+                        </div>
+                        <div className="py-3">
+                            <input onFocus={() => setShowError(false)} type="email" name="email" className="p-2 rounded-[20px] min-w-[2rem] lg:min-w-[20rem] leading-7 border-black border-2" placeholder="E-Mail Addresse" />
+                            {showError && <div className='text-red-600'>Bitte eine E-Mail Adresse eintragen</div>}
+                        </div>
+                        <div className="py-3">
+                            <button className="bg-[#f2ff00] py-2 px-4 rounded-[20px] hover:underline leading-10 text-md cta-button" type="submit">
+                                Zum Newsletter anmelden
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     )
 }

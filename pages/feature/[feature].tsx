@@ -18,7 +18,7 @@ export default function FeaturePage({ dePosts, enPosts }) {
                     <PostTitle>Loading…</PostTitle>
                     : (
                         <>
-                            <div className="flex justify-center p-1 md:p-5">
+                            <div className="flex justify-center p-1 md:pt-5">
                                 <PostTitle>Artikel auf Englisch</PostTitle>
                             </div>
                             <article>
