@@ -33,7 +33,7 @@ export default function SubscribeBox() {
     return (
         <div className='pt-10 md:pt-[8rem]'>
             <form onSubmit={submitForm}>
-                <div className="bg-[#f2ff0095] border-t border-accent1">
+                <div className="bg-[#f2ff0060] border-t border-accent1">
                     <div className="subscribe-box container">
                         <div className="py-3 text-xl md:text-2xl">
                             Newsletter abonnieren:
