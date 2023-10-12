@@ -46,7 +46,7 @@ export default function Post({ post, posts }) {
               />
               <PostBody content={post.content} />
               <footer>
-                {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
+                {post.tags.edges.length > 0 && <Tags tags={post.tags.edges} />}
               </footer>
             </article>
 

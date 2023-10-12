@@ -18,7 +18,7 @@ export default function FeaturePage({ dePosts, enPosts }) {
                     <PostTitle>Loading…</PostTitle>
                     : (
                         <>
-                            <div className="flex justify-center p-5">
+                            <div className="flex justify-center p-1 md:p-5">
                                 <PostTitle>Artikel auf Englisch</PostTitle>
                             </div>
                             <article>
@@ -56,7 +56,9 @@ export const getServerSideProps: GetServerSideProps = async ({
         url: post.url,
         image: post.cover_image,
         date: post.published_at,
-        tags: post.tags
+        tags: {
+            nodes: post.tags.map(tag=>({name:tag}))
+        }
     }))
 
     return {

@@ -18,7 +18,7 @@ export default function PostCard({ post, image, link }) {
                         dangerouslySetInnerHTML={{ __html: post.title }}
                     >
                     </Link>
-                    {post.tags && <Tags tags={post.tags} />}
+                    <div className='hidden md:block'>{post?.tags?.nodes && <Tags tags={post.tags.nodes} />}</div>
                 </div>
             </div>
         </div>
