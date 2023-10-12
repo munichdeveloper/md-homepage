@@ -128,7 +128,7 @@
 }
 
 .cta-button {
-  @apply bg-[#f2ff0065] rounded-[20px] p-3 font-bold leading-tight text-center md:text-xl;
+  @apply bg-transparent rounded-[20px] p-3 font-bold leading-tight text-center md:text-xl;
   line-height: 150%;
   border-style: dashed;
   border-color: black;

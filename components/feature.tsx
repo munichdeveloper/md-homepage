@@ -15,7 +15,7 @@ export default function Feature({ orderFirst, imgSrc, title, text, link = '#' })
                     <div className="text-2xl md:text-5xl font-bold leading-[2rem] md:leading-10 grid text-center mb-[1.3rem]">{title}</div>
                     <div className='leading-7 text-xl md:text-2xl mb-[0.6rem] md:mb-[1rem] text-center'>{text}</div>
                     <div className='text-center'>
-                        <button className='font-bold bg-[#f2ff00] py-2 px-4 rounded-[20px] hover:underline leading-[2rem] text-md border-2 border-black'>
+                        <button className='font-bold bg-[#f2ff0065] py-2 px-4 rounded-[20px] hover:underline leading-[2rem] text-md border-2 border-black'>
                             <Link href={link} >Mehr erfahren</Link>
                         </button>
                     </div>

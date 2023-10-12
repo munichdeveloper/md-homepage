@@ -43,7 +43,7 @@ export default function SubscribeBox() {
                             {showError && <div className='text-red-600'>Bitte eine E-Mail Adresse eintragen</div>}
                         </div>
                         <div className="py-3">
-                            <button className="bg-[#f2ff00] py-2 px-4 rounded-[20px] hover:underline leading-10 text-md cta-button" type="submit">
+                            <button className="py-2 px-4 rounded-[20px] hover:underline leading-10 text-md cta-button" type="submit">
                                 Zum Newsletter anmelden
                             </button>
                         </div>
