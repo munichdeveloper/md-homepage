@@ -80,14 +80,14 @@ export default function LandingPage() {
                         <Feature
                             title="Blog mit NextJS + Wordpress Backend"
                             text="Blog umgesetzt mit NextJS Frontend und einem Wordpress Backend"
-                            orderFirst={false}
+                            orderFirst={true}
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/6597472-scaled.jpg"
                         />
                         <Feature
                             link="/feature/auth"
                             title="Authentifizierung"
                             text="Authentifizierung mit React / NextJS und Spring Boot über z.B. Magic Links"
-                            orderFirst={true}
+                            orderFirst={false}
                             imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/5101874.jpg"
                         />
                     </div>

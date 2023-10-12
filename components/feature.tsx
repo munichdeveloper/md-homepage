@@ -10,7 +10,7 @@ export default function Feature({ orderFirst, imgSrc, title, text, link = '#' })
                     width={300} height={200}
                     src={imgSrc} alt={title} />
             </div>
-            <div className="flex flex-1 items-center">
+            <div className="flex flex-1 items-center justify-center">
                 <div className="">
                     <div className="text-2xl md:text-5xl font-bold leading-[2rem] md:leading-10 grid text-center mb-[1.3rem]">{title}</div>
                     <div className='leading-7 text-xl md:text-2xl mb-[0.6rem] md:mb-[1rem] text-center'>{text}</div>

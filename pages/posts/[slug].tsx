@@ -45,9 +45,11 @@ export default function Post({ post, posts }) {
                 date={post.date}
               />
               <PostBody content={post.content} />
-              <footer className='p-5 md:p-10'>
-                {post.tags.edges.length > 0 && <Tags tags={post.tags.edges.map(edge => ({ name: edge.node.name }))} />}
-              </footer>
+              <div className='max-w-4xl mx-auto'>
+                <footer className='pt-5 md:pt-10'>
+                  {post.tags.edges.length > 0 && <Tags tags={post.tags.edges.map(edge => ({ name: edge.node.name }))} />}
+                </footer>
+              </div>
             </article>
 
             <SectionSeparator />
