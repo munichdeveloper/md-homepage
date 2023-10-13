@@ -230,8 +230,7 @@ img[class*="wp-image-"] {
 }
 
 .feature-image {
-  @apply flex justify-center mx-auto m-5 md:m-10 order-1 md:order-none;
-  width: 50%;
+  @apply flex justify-center mx-auto m-5 md:m-10 order-1 md:order-none min-w-[50%] md:min-w-[30%];
 }
 
 .feature-header-wrapper {

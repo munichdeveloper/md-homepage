@@ -31,14 +31,16 @@ export default function FeaturePage({ header, headerImage, subtitle, dePosts, en
                                 </div>
 
                             </div>
-                            <div className="flex p-1 md:pt-5">
-                                <div className="text-[1.2rem] font-semibold">Artikel auf Englisch:</div>
-                            </div>
-                            <article>
-                                {enPosts && enPosts.length && enPosts.map(post =>
-                                    <PostCard link={post.url} key={post.id} post={post} image={post.image} />
-                                )}
-                            </article>
+                            {enPosts && enPosts.length > 0 && <>
+                                <div className="flex p-1 md:pt-5">
+                                    <div className="text-[1.2rem] font-semibold">Artikel auf Englisch:</div>
+                                </div>
+                                <article>
+                                    {enPosts.map(post =>
+                                        <PostCard link={post.url} key={post.id} post={post} image={post.image} />
+                                    )}
+                                </article>
+                            </>}
                         </>
                     )
                 }
@@ -58,11 +60,11 @@ export const getServerSideProps: GetServerSideProps = async ({
     const feature = params?.feature as string
     const prom = features[feature]
         .external_resources["dev.to"]
-        .map(async url => await fetch(url, requestOptions)
+        ?.map(async url => await fetch(url, requestOptions)
             .then(response => response.json()))
 
-    const resp = await Promise.all(prom)
-    const enPosts = resp.map(post => ({
+    const resp = prom ? await Promise.all(prom) : []
+    const enPosts = resp ? resp.map(post => ({
         id: post.id,
         title: post.title,
         content: post.description,
@@ -72,7 +74,7 @@ export const getServerSideProps: GetServerSideProps = async ({
         tags: {
             nodes: post.tags.map(tag => ({ name: tag }))
         }
-    }))
+    })) : []
 
     return {
         props: {

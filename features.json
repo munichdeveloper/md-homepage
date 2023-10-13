@@ -9,5 +9,40 @@
                 "https://dev.to/api/articles/1583796"
             ]
         }
+    },
+    "nolowcode": {
+        "header_text": "Mit No- oder Low-Code schnell und kosteneffizient einfache Webanwendungen erstellen",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/3094293.jpg",
+        "subtitle": "",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "nolowcodemig": {
+        "header_text": "Wie kriege ich meine Daten wieder aus der Low Code App heraus?",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-02_Single-06.jpg",
+        "subtitle": "Bevor Daten in die Low-Code App kommen, fragt man sich besser, wie sie auch wieder raus kommen",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "nolowcodeconsulting": {
+        "header_text": "Was kann man mit No- oder Low-Code machen?",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20945218.jpg",
+        "subtitle": "Ist mein Vorhaben für Low Code geeignet? Was sind Nachteile von No-Code?",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "ki": {
+        "header_text": "Wie kann ich künstliche Intelligenz in meinem Unternehmen heute schon sinnvoll nutzen?",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/5326273.jpg",
+        "subtitle": "Anwendungsfälle für KI in Deinem Unternehmen",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "hosting_monitoring": {
+        "header_text": "Wie kann ich sicherstellen, dass meine Anwendungen online bleiben?",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "subtitle": "Wie merke ich, wenn es zu einem Fehler kommt?",
+        "own_resources": {},
+        "external_resources": {}
     }
 }
