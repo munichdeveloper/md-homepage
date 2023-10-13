@@ -1,5 +1,6 @@
 import { GetServerSideProps } from "next"
 import { useRouter } from "next/router"
+import Image from 'next/image'
 import Container from "../../components/container"
 import Layout from "../../components/layout"
 import PostCard from "../../components/post-card"
@@ -7,7 +8,7 @@ import PostTitle from "../../components/post-title"
 import TopBar from "../../components/top-bar"
 import features from "../../features.json"
 
-export default function FeaturePage({ dePosts, enPosts }) {
+export default function FeaturePage({ header, headerImage, subtitle, dePosts, enPosts }) {
     const router = useRouter()
 
     return (
@@ -18,8 +19,20 @@ export default function FeaturePage({ dePosts, enPosts }) {
                     <PostTitle>Loading…</PostTitle>
                     : (
                         <>
-                            <div className="flex justify-center p-1 md:pt-5">
-                                <PostTitle>Artikel auf Englisch</PostTitle>
+                            <div className="feature-header-wrapper">
+                                <div className="feature-image">
+                                    <Image className='rounded-[20px]'
+                                        width={500} height={400}
+                                        src={headerImage} alt={""} />
+                                </div>
+                                <div className="feature-text">
+                                    {header}
+                                    <div className="feature-text-subtitle">{subtitle}</div>
+                                </div>
+
+                            </div>
+                            <div className="flex p-1 md:pt-5">
+                                <div className="text-[1.2rem] font-semibold">Artikel auf Englisch:</div>
                             </div>
                             <article>
                                 {enPosts && enPosts.length && enPosts.map(post =>
@@ -57,13 +70,16 @@ export const getServerSideProps: GetServerSideProps = async ({
         image: post.cover_image,
         date: post.published_at,
         tags: {
-            nodes: post.tags.map(tag=>({name:tag}))
+            nodes: post.tags.map(tag => ({ name: tag }))
         }
     }))
 
     return {
         props: {
-            enPosts
+            enPosts,
+            header: features[feature]['header_text'],
+            subtitle: features[feature]['subtitle'],
+            headerImage: features[feature]['header_image']
         }
     }
 }

@@ -22,7 +22,9 @@ export default function LegalNotice() {
                                     munich developer | Quelltext aus München
                                 </title>
                             </Head>
-                            Folgt in Kürze!
+                            <p>munich developer - Johannes Hinkov</p>
+                            <p>Am Hanselbrunn 25</p>
+                            <p>85586 Poing</p>
                         </article>
                     </>
                 )}

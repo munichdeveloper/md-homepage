@@ -224,3 +224,20 @@ img[class*="wp-image-"] {
 .footer-block-title {
   @apply font-bold mb-1 mt-7
 }
+
+.feature-text {
+  @apply font-bold text-3xl md:text-6xl text-center self-center md:leading-[3rem] m-10;
+}
+
+.feature-image {
+  @apply flex justify-center mx-auto m-5 md:m-10 order-1 md:order-none;
+  width: 50%;
+}
+
+.feature-header-wrapper {
+  @apply flex flex-col md:flex-row pb-12;
+}
+
+.feature-text-subtitle {
+  @apply text-xl font-semibold pt-3;
+}

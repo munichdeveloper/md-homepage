@@ -13,6 +13,7 @@ export default function Footer() {
           </div>
           <div className='p-3 md:p-5'>
             <div className="footer-block-title">Kontakt</div>
+            <div>Kontaktformular</div>
             <div>info@munich-developer.de</div>
             <div>(DE) +49 176 / 55 14 42 07</div>
           </div>

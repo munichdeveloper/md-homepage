@@ -1,5 +1,8 @@
 {
     "auth": {
+        "header_text": "Verschiedene Varianten zur Authentifizierung",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/2892856.jpg",
+        "subtitle": "z.B.: Passwordless Authentication mit Spring Boot + ReactJS/NextJS",
         "own_resources": {},
         "external_resources": {
             "dev.to": [
