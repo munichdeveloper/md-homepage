@@ -44,5 +44,54 @@
         "subtitle": "Wie merke ich, wenn es zu einem Fehler kommt?",
         "own_resources": {},
         "external_resources": {}
+    },
+    "softwaredevelopment_subscription": {
+        "header_text": "Softwareentwicklung zum Festpreis",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "subtitle": "Wöchentliche & Monatliche Lieferungen, Individualentwicklung",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "reactdesign": {
+        "header_text": "Vom Entwurf zur Webanwendung",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "subtitle": "Designs und Templates zum Leben erwecken",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "crm": {
+        "header_text": "Customer Relationship Management muss nicht teuer sein",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "subtitle": "Leichtgewichtige CRM Lösungen als Alternative zu z.B.: Pipedrive",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "portfoliopage": {
+        "header_text": "Portfolio Webseiten",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "subtitle": "für Bewerbungen oder als digitale Visitenkarte",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "scraping_data_mining": {
+        "header_text": "Daten sind das neue Gold",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "subtitle": "Wie können Daten in meinem Unternehmen gewinnbringend genutzt werden?",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "landingpage": {
+        "header_text": "Der erste Eindruck zählt, online sogar noch mehr.",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "subtitle": "Landingpages, die konvertieren",
+        "own_resources": {},
+        "external_resources": {}
+    },
+    "nextjsblog": {
+        "header_text": "Blog auf Basis von NextJS",
+        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "subtitle": "Wordpress hat ausgedient",
+        "own_resources": {},
+        "external_resources": {}
     }
 }
