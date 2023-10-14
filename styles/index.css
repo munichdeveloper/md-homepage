@@ -240,3 +240,11 @@ img[class*="wp-image-"] {
 .feature-text-subtitle {
   @apply text-xl font-semibold pt-3;
 }
+
+.form-input {
+  @apply border border-2 leading-7 border-black rounded-[20px] min-w-[2rem] lg:min-w-[20rem];
+}
+
+.form-label {
+  @apply p-1 pt-5 font-semibold text-xl
+}
