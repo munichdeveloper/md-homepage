@@ -99,13 +99,13 @@ export default function HeroPage({ hero }) {
                                                 <div>Bitte beachte: Wir können nur <strong>einen einzigen Bewerber</strong> berücksichtigen und werden das Projekt wählen, das aus unserer Sicht das <strong>größte Potential</strong> verspricht UND <strong>am Besten / Genauesten beschrieben</strong> ist.</div>
                                                 <div>Und: Wir werden für die Umsetzung Deiner Idee und die Erstellung Deiner Webapp <strong>viel Zeit</strong> investieren.</div>
                                                 <div>Im Gegenzug erwarten wir von Dir, uns <strong>so viel wie möglich und so detailiert wie möglich</strong> zu beschreiben, was Du von uns brauchst.</div>
-                                                <div>Das ist auch 'ne Menge Arbeit, aber nur so können <strong>wir Dir bestmöglich helfen</strong> und einschätzen, ob wir als Softwareentwickler zu Dir und Deinem Anliegen passen.</div>
+                                                <div>Das ist auch &apos;ne Menge Arbeit, aber nur so können <strong>wir Dir bestmöglich helfen</strong> und einschätzen, ob wir als Softwareentwickler zu Dir und Deinem Anliegen passen.</div>
                                             </div>
                                             <div className="flex flex-col justify-center items-center pt-5 md:pt-10">
                                                 <div>
                                                     <button
                                                         className="border border-black border-2 border-dotted m-3 md:m-10 rounded-[2rem] p-3 bg-[#76D0D280] hover:scale-110 duration-300 hover:border-solid" type="submit">
-                                                        <span className="font-semibold text-xl">Jaja, ich versteh schon. Auf geht's :-)</span>
+                                                        <span className="font-semibold text-xl">Jaja, ich versteh schon. Auf geht&apos;s :-)</span>
                                                     </button>
                                                 </div>
                                                 <div className="text-center text-2xl font-bold pt-10 md:pt-[6rem]">
