@@ -40,8 +40,9 @@ export default function HeroPage({ hero }) {
                                                 <p className="p-3">💻 Erklär uns, wie eine Webapp dich bei <span className="font-bold">Deinem Vorhaben</span> unterstützen wird</p>
                                                 <p className="p-3">🦄 Sag uns, warum Deine Idee das Potential hat, das <span className="font-bold">nächste Unicorn</span> hervorzubringen</p>
                                             </div>
-                                            <div className="p-5 md:p-10 flex justify-center">
-                                                <Image className="rounded-[1rem] shadow-medium" alt="" width="700" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/person-points-camera-scaled.jpg" />
+                                            <div className="p-5 md:p-10 flex flex-col justify-center">
+                                                <div><Image className="rounded-[1rem] shadow-medium" alt="" width="700" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/person-points-camera-scaled.jpg" /></div>
+                                                <div className="text-sm"><a href="https://www.freepik.com/free-photo//a-person-points-on-camera_7608056.htm">Image by KamranAydinov</a> on Freepik</div>
                                             </div>
                                         </div>
                                     </div>
@@ -111,8 +112,9 @@ export default function HeroPage({ hero }) {
                                                 <div className="text-center text-2xl font-bold pt-10 md:pt-[6rem]">
                                                     Viel Glück :-)
                                                 </div>
-                                                <div>
-                                                    <Image className="rounded-[2rem] shadow-medium" alt="" width="500" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/Design-ohne-Titel-1.jpg" />
+                                                <div className="flex flex-col">
+                                                    <div><Image className="rounded-[2rem] shadow-medium" alt="" width="500" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue-scaled.jpg" /></div>
+                                                    <div className="text-sm"><a href="https://www.freepik.com/free-photo/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue_54678251.htm#page=7&query=good%20luck&position=45&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>
                                                 </div>
                                             </div>
 

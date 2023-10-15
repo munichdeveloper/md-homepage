@@ -4,6 +4,7 @@ import Header from "../components/header";
 import Layout from "../components/layout";
 import PostTitle from "../components/post-title";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function LegalNotice() {
     const router = useRouter()
@@ -16,7 +17,7 @@ export default function LegalNotice() {
                     <PostTitle>Loading…</PostTitle>
                 ) : (
                     <>
-                        <article>
+                        <article className="p-3">
                             <Head>
                                 <title>
                                     munich developer | Quelltext aus München
@@ -25,6 +26,9 @@ export default function LegalNotice() {
                             <p>munich developer - Johannes Hinkov</p>
                             <p>Am Hanselbrunn 25</p>
                             <p>85586 Poing</p>
+                        </article>
+                        <article className="p-3">
+                            Alle auf der Webseite verwendeten Bilder stammen von: <strong><Link target="_blank" href="https://freepik.com">https://www.freepik.com</Link></strong>
                         </article>
                     </>
                 )}
