@@ -246,5 +246,9 @@ img[class*="wp-image-"] {
 }
 
 .form-label {
-  @apply p-1 pt-5 font-semibold text-xl
+  @apply p-1 pt-5 font-semibold text-xl;
+}
+
+input, textarea {
+  @apply focus:border-orange-300 focus:outline-none focus:ring-0 focus:border-[3px] focus:scale-105 w-full;
 }

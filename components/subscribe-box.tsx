@@ -39,11 +39,11 @@ export default function SubscribeBox() {
                             Newsletter abonnieren:
                         </div>
                         <div className="py-3">
-                            <input onFocus={() => setShowError(false)} type="email" name="email" className="p-2 rounded-[20px] min-w-[2rem] lg:min-w-[20rem] leading-7 border-black border-2" placeholder="E-Mail Addresse" />
+                            <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onFocus={() => setShowError(false)} type="email" name="email" className="p-2 rounded-[20px] w-auto min-w-[2rem] lg:min-w-[20rem] leading-7 border-black border-2" placeholder="E-Mail Addresse" />
                             {showError && <div className='text-red-600'>Bitte eine E-Mail Adresse eintragen</div>}
                         </div>
                         <div className="py-3">
-                            <button className="py-2 px-4 rounded-[20px] hover:underline leading-10 text-md cta-button" type="submit">
+                            <button className="py-2 px-4 rounded-[20px] hover:underline leading-10 text-md cta-button hover:scale-110 hover:border-solid duration-300 " type="submit">
                                 Zum Newsletter anmelden
                             </button>
                         </div>
