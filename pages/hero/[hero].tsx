@@ -1,3 +1,4 @@
+import axios from "axios";
 import { GetServerSideProps } from "next";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -10,7 +11,46 @@ export default function HeroPage({ hero }) {
 
     async function submitForm(event) {
         event.preventDefault();
-        console.log(event.target.name.value)
+        const values = event.target;
+
+        const email = values.email.value;
+        var bodyFormData = new FormData();
+        bodyFormData.append('fields[email]', email);
+
+        const resp = await axios(
+            {
+                headers: {
+                    "Content-Type": "multipart/form-data",
+                },
+                method: 'post',
+                url: 'https://assets.mailerlite.com/jsonp/471723/forms/100780932077717361/subscribe',
+                data: bodyFormData
+            }
+        );
+
+        const respAirtable = await axios({
+            method: 'post',
+            headers: { Authorization: 'Bearer patfJeBOJOVq0LW1d.4ae418ebe66e2d0211d154a040673d082b4c1908cf18e3bfc32704250a778688' },
+            url: 'https://api.airtable.com/v0/app4l0JNBgjCRqwCf/Table%201',
+            data: {
+                records: [
+                    {
+                        fields: {
+                            Name: values.name.value,
+                            Email: values.email.value,
+                            idea_description: values.idea.value,
+                            features_description: values.app_description.value,
+                            questions: values.questions.value,
+                            campaign: hero
+                        }
+                    }
+                ]
+            }
+        });
+
+        if (respAirtable.status == 200) {
+            router.push('/campaign-confirmation');
+        }
     }
 
     return (
@@ -42,7 +82,7 @@ export default function HeroPage({ hero }) {
                                             </div>
                                             <div className="p-5 md:p-10 flex flex-col justify-center">
                                                 <div><Image className="rounded-[1rem] shadow-medium" alt="" width="700" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/person-points-camera-scaled.jpg" /></div>
-                                                <div className="text-sm"><a href="https://www.freepik.com/free-photo//a-person-points-on-camera_7608056.htm">Image by KamranAydinov</a> on Freepik</div>
+                                                <div className="text-sm"><a target="_blank" href="https://www.freepik.com/free-photo//a-person-points-on-camera_7608056.htm">Image by KamranAydinov</a> on Freepik</div>
                                             </div>
                                         </div>
                                     </div>
@@ -92,7 +132,7 @@ export default function HeroPage({ hero }) {
                                                 </div>
                                                 <div className="form-label">Was möchtest Du von uns wissen?</div>
                                                 <div className="p-1 col-span-2">
-                                                    <textarea required name="idea" className="form-input p-2" rows={10}
+                                                    <textarea required name="questions" className="form-input p-2" rows={10}
                                                         placeholder="Hier ist Platz für Deine Fragen. Alles was Dir gerade so durch den Kopf geht, egal was, wir werden es Dir beantworten :-)" />
                                                 </div>
                                             </div>
@@ -114,7 +154,7 @@ export default function HeroPage({ hero }) {
                                                 </div>
                                                 <div className="flex flex-col">
                                                     <div><Image className="rounded-[2rem] shadow-medium" alt="" width="500" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue-scaled.jpg" /></div>
-                                                    <div className="text-sm"><a href="https://www.freepik.com/free-photo/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue_54678251.htm#page=7&query=good%20luck&position=45&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>
+                                                    <div className="text-sm"><a target="_blank" href="https://www.freepik.com/free-photo/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue_54678251.htm#page=7&query=good%20luck&position=45&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>
                                                 </div>
                                             </div>
 

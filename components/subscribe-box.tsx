@@ -17,7 +17,9 @@ export default function SubscribeBox() {
         } else {
             const resp = await axios(
                 {
-                    headers: { "Content-Type": "multipart/form-data" },
+                    headers: {
+                        "Content-Type": "multipart/form-data",
+                    },
                     method: 'post',
                     url: 'https://assets.mailerlite.com/jsonp/471723/forms/100780932077717361/subscribe',
                     data: bodyFormData
