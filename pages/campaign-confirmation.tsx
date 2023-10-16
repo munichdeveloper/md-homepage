@@ -22,8 +22,9 @@ export default function CampaignConfirmation() {
                                 <section className="flex items-center flex-col">
                                     <h1 className="text-2xl md:text-5xl font-bold md:pb-10 text-center">Vielen Dank für Dein Interesse!</h1>
                                     <div className="p-5 md:p-8">
-                                        <div className="flex justify-center font-bold">
-                                            Wir melden uns bald bei Dir, versprochen! Du erhälst auch noch eine E-Mail, um deine Addresse zu bestätigen.
+                                        <div className="flex flex-col justify-center text-center font-bold md:text-xl">
+                                            <span>Wir melden uns bald bei Dir, versprochen!</span>
+                                            <span>Du erhälst auch noch eine E-Mail, um deine Addresse zu bestätigen.</span>
                                         </div>
                                     </div>
                                     <div className="p-5 md:p-10 flex flex-col justify-center items-center">

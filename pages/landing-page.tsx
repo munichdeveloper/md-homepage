@@ -3,8 +3,8 @@ import Container from "../components/container";
 import Entry from "../components/entry";
 import Feature from "../components/feature";
 import Headline from "../components/headline";
-import TopBar from "../components/top-bar";
 import Layout from "../components/layout";
+import TopBar from "../components/top-bar";
 
 export default function LandingPage() {
     return (

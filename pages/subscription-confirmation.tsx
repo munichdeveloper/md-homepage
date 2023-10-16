@@ -1,9 +1,9 @@
+import Image from 'next/image';
 import { useRouter } from "next/router";
 import Container from "../components/container";
-import TopBar from "../components/top-bar";
 import Layout from "../components/layout";
 import PostTitle from "../components/post-title";
-import Image from 'next/image'
+import TopBar from "../components/top-bar";
 
 export default function SubscriptionConfirmation() {
     const router = useRouter()
@@ -22,7 +22,7 @@ export default function SubscriptionConfirmation() {
                                 <section className="flex items-center flex-col">
                                     <h1 className="text-2xl md:text-5xl font-bold md:pb-10 text-center">Vielen Dank für Dein Interesse!</h1>
                                     <div className="p-5 md:p-8">
-                                        <div className="flex justify-center font-bold">
+                                        <div className="flex justify-center font-bold text-center md:text-xl">
                                             Ich sende Dir in den nächsten Minuten eine Bestätigungsmail zu.
                                         </div>
                                     </div>

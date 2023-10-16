@@ -1,10 +1,10 @@
 import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import Container from "../components/container";
 import Header from "../components/header";
 import Layout from "../components/layout";
 import PostTitle from "../components/post-title";
-import { useRouter } from "next/router";
-import Link from "next/link";
 
 export default function LegalNotice() {
     const router = useRouter()

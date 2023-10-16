@@ -1,6 +1,6 @@
 import { GetServerSideProps } from "next"
-import { useRouter } from "next/router"
 import Image from 'next/image'
+import { useRouter } from "next/router"
 import Container from "../../components/container"
 import Layout from "../../components/layout"
 import PostCard from "../../components/post-card"
