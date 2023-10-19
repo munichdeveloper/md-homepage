@@ -6,7 +6,7 @@ import Headline from "../components/headline";
 import Layout from "../components/layout";
 import TopBar from "../components/top-bar";
 
-export default function LandingPage() {
+export default function Home() {
     return (
         <Layout>
             <div className="min-h-screen">

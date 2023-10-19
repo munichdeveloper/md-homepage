@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="footer-block-title">Links</div>
             <div><Link href="/">Startseite</Link></div>
             <div><Link href="/blog">Blog</Link></div>
-            <div><Link href="/hero/hero1">Wir bauen dein Unicorn .. kostenlos</Link></div>
+            <div><Link href="/hero/wir-erstellen-deine-webapp-kostenlos">Wir bauen dein Unicorn .. kostenlos</Link></div>
           </div>
           <div className='p-3 md:p-5'>
             <div className="footer-block-title">Social Media</div>
