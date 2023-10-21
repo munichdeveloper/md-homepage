@@ -23,12 +23,13 @@ export default function LegalNotice() {
                                     munich developer | Quelltext aus München
                                 </title>
                             </Head>
+                            <h1 className="text-2xl md:text-4xl py-3">Impressum</h1>
                             <p>munich developer - Johannes Hinkov</p>
                             <p>Am Hanselbrunn 25</p>
                             <p>85586 Poing</p>
                         </article>
                         <article className="p-3">
-                            Alle auf der Webseite verwendeten Bilder stammen von: <strong><Link target="_blank" href="https://freepik.com">https://www.freepik.com</Link></strong>
+                            Alle auf der Webseite verwendeten Bilder stammen von: <strong><Link target="_blank" href="https://www.freepik.com/">https://www.freepik.com</Link></strong>
                         </article>
                     </>
                 )}

@@ -64,13 +64,13 @@ export default function HeroPage({ hero }) {
                                 <>
                                     <div>
                                         <div className="flex flex-col flex items-center">
-                                            <div className="flex flex-col md:flex-row items-start md:items-end text-3xl md:text-6xl font-bold text-center p-5 md:p-10">
+                                            <h1 className="flex flex-col md:flex-row items-start md:items-end text-3xl md:text-6xl font-bold text-center p-5 md:p-10">
                                                 <span>Wir setzen die</span>
                                                 <span className="text-4xl md:text-7xl md:px-3 leading-10"> Webapp </span>
                                                 für
                                                 <span className="text-4xl md:text-7xl md:px-3">Deine Idee</span>
                                                 um !
-                                            </div>
+                                            </h1>
                                             <div className="flex flex-col md:flex-row items-start md:items-end text-3xl md:text-6xl font-bold text-center p-1 md:p-3">
                                                 … und das kostenlos :-)
                                             </div>
@@ -82,7 +82,7 @@ export default function HeroPage({ hero }) {
                                             </div>
                                             <div className="p-5 md:p-10 flex flex-col justify-center">
                                                 <div><Image className="rounded-[1rem] shadow-medium" alt="" width="700" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/person-points-camera-scaled.jpg" /></div>
-                                                <div className="text-sm"><a target="_blank" href="https://www.freepik.com/free-photo//a-person-points-on-camera_7608056.htm">Image by KamranAydinov</a> on Freepik</div>
+                                                <div className="text-sm"><a target="_blank" href="https://www.freepik.com/free-photo/person-points-camera_7608056.htm">Image by KamranAydinov</a> on Freepik</div>
                                             </div>
                                         </div>
                                     </div>

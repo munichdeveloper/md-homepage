@@ -22,6 +22,11 @@ export default function Layout({ children }) {
         <Head>
           <title>munich-developer | Quelltext aus München</title>
         </Head>
+        <meta
+          name="description"
+          content="munich-developer.de - Dein Softwareentwickler aus München. Wir bauen innovative Lösungen mit Hilfe von No- und Low-Code, Künstlicher Intelligenz und den modernsten Tech-Stacks!"
+          key="desc"
+        />
         <main>{children}</main>
       </div>
       <SubscribeBox />
