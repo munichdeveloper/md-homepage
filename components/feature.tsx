@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import cn from 'classnames'
 import Link from 'next/link'
+import { useTranslation } from 'next-i18next'
 
 export default function Feature({ orderFirst, imgSrc, title, text, link = '#' }) {
+    const { t } = useTranslation('common');
+
     return (
         <div className='flex flex-col md:flex-row mt-5 mb-[2rem]'>
             <div className={cn('grid flex-1 justify-center p-5 items-center', { 'md:order-1': orderFirst })}>
@@ -16,7 +19,7 @@ export default function Feature({ orderFirst, imgSrc, title, text, link = '#' })
                     <div className='leading-7 text-xl md:text-2xl mb-[0.6rem] md:mb-[1rem] text-center'>{text}</div>
                     <div className='text-center'>
                         <button className='font-bold bg-[#f2ff0065] py-2 px-4 rounded-[20px] hover:underline leading-[2rem] text-md border-2 border-black'>
-                            <Link href={link} >Mehr erfahren</Link>
+                            <Link href={link} >{t('read_more')}</Link>
                         </button>
                     </div>
                 </div>

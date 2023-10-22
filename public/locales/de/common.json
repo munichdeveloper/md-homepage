@@ -1,6 +1,82 @@
 {
     "home": {
-        "no_and_low_code": "No- und Low-Code"
+        "where_i_support": "... und hierbei unterstütze ich gerne!",
+        "no_and_low_code": {
+            "title": "No- und Low-Code",
+            "subtitle": "Software Komponenten und Funktionalitäten aus dem No- und Low-Code Bereich,\nz.B.: Softr, Bubble, Airtable, Make (Integromat), Zapier usw.",
+            "feature1": {
+                "title": "Entwicklung einer No- / Low-Code Webanwendung",
+                "text": "Webapp Entwicklung unter Einsatz von No- bzw. Low-Code Plattformen"
+            },
+            "feature2": {
+                "title": "No- / Low-Code Migration",
+                "text": "Daten in oder aus einer No- / Low-Code Anwendung migrieren"
+            },
+            "feature3": {
+                "title": "No- / Low-Code Consulting",
+                "text": "Beratung zu möglichen Einsatzszenarien von No- und / oder Low-Code"
+            }
+        },
+        "ki": {
+            "title": "Künstliche Intelligenz & ChatGPT",
+            "subtitle": "Effizienzsteigerung im Unternehmen mit KI",
+            "feature1": {
+                "title": "Einfache Integration von Schnittstellen",
+                "text": "Schnittstellen mit weniger Aufwand in die eigene Systemlandschaft integrieren"
+            }
+        },
+        "startup": {
+            "title": "Startup",
+            "subtitle": "Softwarekomponenten für Startups und KMUs",
+            "feature1": {
+                "title": "Landing Page",
+                "text": "Landing Page mit Hero section, Email / Newsletter Subscription"
+            },
+            "feature2": {
+                "title": "React Design & Layout",
+                "text": "Ein React Design und das Layout erstellen aus Vorlage, z.B. Figma"
+            },
+            "feature3": {
+                "title": "Blog mit NextJS + Wordpress Backend",
+                "text": "Blog umgesetzt mit NextJS Frontend und einem Wordpress Backend"
+            },
+            "feature4": {
+                "title": "Authentifizierung",
+                "text": "Authentifizierung mit React / NextJS und Spring Boot über z.B. Magic Links oder PassKeys"
+            }
+        },
+        "creatives": {
+            "title": "Creatives",
+            "subtitle": "Softwarekomponenten für Kreative und Selbstständige",
+            "feature1": {
+                "title": "Portfolio Website",
+                "text": "Portfolio Seite für z.B. Bewerbungen"
+            },
+            "feature2": {
+                "title": "Leightweight CRM",
+                "text": "Schnelle und einfache CRM Lösungen für den schmalen Taler"
+            }
+        },
+        "scraping": {
+            "title": "Webscraping",
+            "subtitle": "Daten direkt von Websites auslesen und gewinnbringend im eigenen Unternehmen nutzen",
+            "feature1": {
+                "title": "Webscraping & Data-Mining",
+                "text": "Webscraper auf Basis von Selenium oder No-Code, z.B. Bardeen AI"
+            }
+        },
+        "other": {
+            "title": "Sonstiges",
+            "subtitle": "Software-Abo, Hosting, Monitoring, usw.",
+            "feature1": {
+                "title": "Softwareentwicklung Abo",
+                "text": "Monatliche / Jährlich laufende Abos mit abgestimmten Meilensteinen und Lieferungen. Individuelle Vereinbarungen."
+            },
+            "feature2": {
+                "title": "Hosting & Monitoring",
+                "text": "Individuelle Lösungen und Angebote um ihre Apps durch uns hosten und monitoren zu lassen"
+            }
+        }
     },
-    "no_and_low_code": "No- und Low-Code"
+    "read_more": "Mehr erfahren"
 }
