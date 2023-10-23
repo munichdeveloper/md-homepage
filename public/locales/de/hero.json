@@ -22,5 +22,10 @@
     "app_desc_placeholder": "Hast du schon eine Idee, wie deine Webapp funktionieren soll? Welche Features sind nötig? Was sollte ein MVP können? Hast du schon Ideen / Vorstellungen für: Tech Stack, Frameworks, sonstige technische Anforderungen / Rahmenbedingungen?",
     "questions_label": "Was möchtest Du von uns wissen?",
     "questions_placeholder": "Hier ist Platz für Deine Fragen. Alles was Dir gerade so durch den Kopf geht, egal was, wir werden es Dir beantworten :-)",
-    "note1": "Bitte beachte: Wir können nur <0>einen einzigen Bewerber</0> berücksichtigen und werden das Projekt wählen, das aus unserer Sicht das <0>größte Potential</0> verspricht UND <0>am Besten / Genauesten beschrieben</0> ist."
+    "note1": "Bitte beachte: Wir können nur <0>einen einzigen Bewerber</0> berücksichtigen und werden das Projekt wählen, das aus unserer Sicht das <0>größte Potential</0> verspricht UND <0>am Besten / Genauesten beschrieben</0> ist.",
+    "note2": "Und: Wir werden für die Umsetzung Deiner Idee und die Erstellung Deiner Webapp <0>viel Zeit</0> investieren.",
+    "note3": "Im Gegenzug erwarten wir von Dir, uns <0>so viel wie möglich und so detailiert wie möglich</0> zu beschreiben, was Du von uns brauchst.",
+    "note4": "Das ist für Dich sicherlich auch 'ne Menge Arbeit, aber nur so können <0>wir Dir bestmöglich helfen</0> und einschätzen, ob wir als Softwareentwickler zu Dir und Deinem Anliegen passen.",
+    "i_understand": "Jaja, ich versteh schon. Auf geht's",
+    "good_luck": "Viel Glück"
 }

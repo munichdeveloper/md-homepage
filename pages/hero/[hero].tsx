@@ -184,19 +184,37 @@ function HeroPage({ hero, t }) {
                                                         {t('note1')}
                                                     </Trans>
                                                 </div>
-                                                <div>Und: Wir werden für die Umsetzung Deiner Idee und die Erstellung Deiner Webapp <strong>viel Zeit</strong> investieren.</div>
-                                                <div>Im Gegenzug erwarten wir von Dir, uns <strong>so viel wie möglich und so detailiert wie möglich</strong> zu beschreiben, was Du von uns brauchst.</div>
-                                                <div>Das ist auch &apos;ne Menge Arbeit, aber nur so können <strong>wir Dir bestmöglich helfen</strong> und einschätzen, ob wir als Softwareentwickler zu Dir und Deinem Anliegen passen.</div>
+                                                <div>
+                                                    <Trans t={t}
+                                                        i18nKey="note2"
+                                                        components={[<strong></strong>]}>
+                                                        {t('note2')}
+                                                    </Trans>
+                                                </div>
+                                                <div>
+                                                    <Trans t={t}
+                                                        i18nKey="note3"
+                                                        components={[<strong></strong>]}>
+                                                        {t('note3')}
+                                                    </Trans>
+                                                </div>
+                                                <div>
+                                                    <Trans t={t}
+                                                        i18nKey="note4"
+                                                        components={[<strong></strong>]}>
+                                                        {t('note4')}
+                                                    </Trans>
+                                                </div>
                                             </div>
                                             <div className="flex flex-col justify-center items-center pt-5 md:pt-10">
                                                 <div>
                                                     <button
                                                         className="border border-black border-2 border-dotted m-3 md:m-10 rounded-[2rem] p-3 bg-[#76D0D280] hover:scale-110 duration-300 hover:border-solid" type="submit">
-                                                        <span className="font-semibold text-xl">Jaja, ich versteh schon. Auf geht&apos;s :-)</span>
+                                                        <span className="font-semibold text-xl">{t('i_understand')} :-)</span>
                                                     </button>
                                                 </div>
                                                 <div className="text-center text-2xl font-bold pt-10 md:pt-[6rem]">
-                                                    Viel Glück :-)
+                                                    {t('good_luck')} :-)
                                                 </div>
                                                 <div className="flex flex-col">
                                                     <div><Image className="rounded-[2rem] shadow-medium" alt="" width="500" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue-scaled.jpg" /></div>

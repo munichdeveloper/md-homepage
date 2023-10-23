@@ -1,6 +1,8 @@
 import { GetServerSideProps } from "next"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Image from 'next/image'
 import { useRouter } from "next/router"
+import { useTranslation } from "next-i18next"
 import Container from "../../components/container"
 import Layout from "../../components/layout"
 import PostCard from "../../components/post-card"
@@ -8,9 +10,9 @@ import PostTitle from "../../components/post-title"
 import TopBar from "../../components/top-bar"
 import features from "../../features.json"
 
-export default function FeaturePage({ header, headerImage, subtitle, dePosts, enPosts }) {
+function FeaturePage({ header, headerImage, subtitle, dePosts, enPosts }) {
     const router = useRouter()
-
+    const { t } = useTranslation('feature')
     return (
         <Layout>
             <TopBar />
@@ -26,10 +28,9 @@ export default function FeaturePage({ header, headerImage, subtitle, dePosts, en
                                         src={headerImage} alt={""} />
                                 </div>
                                 <div className="feature-text">
-                                    {header}
-                                    <div className="feature-text-subtitle">{subtitle}</div>
+                                    {t(header)}
+                                    <div className="feature-text-subtitle">{t(subtitle)}</div>
                                 </div>
-
                             </div>
                             {enPosts && enPosts.length > 0 && <>
                                 <div className="flex p-1 md:pt-5">
@@ -50,7 +51,7 @@ export default function FeaturePage({ header, headerImage, subtitle, dePosts, en
 }
 
 export const getServerSideProps: GetServerSideProps = async ({
-    params,
+    params, locale
 }) => {
     const requestOptions = {
         method: 'GET',
@@ -78,6 +79,9 @@ export const getServerSideProps: GetServerSideProps = async ({
 
     return {
         props: {
+            ...(await serverSideTranslations(locale ?? 'de', [
+                'feature'
+            ])),
             enPosts,
             header: features[feature]['header_text'],
             subtitle: features[feature]['subtitle'],
@@ -85,3 +89,5 @@ export const getServerSideProps: GetServerSideProps = async ({
         }
     }
 }
+
+export default (FeaturePage)
