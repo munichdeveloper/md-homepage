@@ -1,3 +1,5 @@
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import { useRouter } from "next/router";
 import Container from "../components/container";
@@ -7,6 +9,7 @@ import TopBar from "../components/top-bar";
 
 export default function CampaignConfirmation() {
     const router = useRouter()
+    const { t } = useTranslation('campaign-confirmation')
 
     return (
         <Layout>
@@ -20,11 +23,11 @@ export default function CampaignConfirmation() {
                             <div className="mb-[5rem] md:mb-[10rem]">
 
                                 <section className="flex items-center flex-col">
-                                    <h1 className="text-2xl md:text-5xl font-bold md:pb-10 text-center">Vielen Dank für Dein Interesse!</h1>
+                                    <h1 className="text-2xl md:text-5xl font-bold md:pb-10 text-center">{t('thanks_for_your_interest')}</h1>
                                     <div className="p-5 md:p-8">
                                         <div className="flex flex-col justify-center text-center font-bold md:text-xl">
-                                            <span>Wir melden uns bald bei Dir, versprochen!</span>
-                                            <span>Du erhälst auch noch eine E-Mail, um deine Addresse zu bestätigen.</span>
+                                            <span>{t('we_will_contact_you')}</span>
+                                            <span>{t('you_will_get_mail_for_confirm')}</span>
                                         </div>
                                     </div>
                                     <div className="p-5 md:p-10 flex flex-col justify-center items-center">
@@ -39,10 +42,10 @@ export default function CampaignConfirmation() {
                                     </div>
                                     <div className="text-center text-sm mt-5">
                                         <div>
-                                            Solltest du keine Mail erhalten, schau bitte in Deinem Spam Ordner nach.
+                                            {t('in_case_no_mail')}
                                         </div>
                                         <div>
-                                            Falls Du dann immer noch keine Mail von uns findest, schreib uns gerne an:
+                                            {t('in_case_still_no_mail')}
                                         </div>
                                         <div className="font-bold">
                                             info@munich-developer.de
@@ -57,3 +60,13 @@ export default function CampaignConfirmation() {
         </Layout>
     )
 }
+
+export const getStaticProps = async ({
+    locale,
+}) => ({
+    props: {
+        ...(await serverSideTranslations(locale ?? 'de', [
+            'campaign-confirmation'
+        ])),
+    },
+})
