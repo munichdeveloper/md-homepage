@@ -69,9 +69,9 @@ function HeroPage({ hero, t }) {
                                             <h1 className="flex flex-col md:flex-row items-start md:items-end text-3xl md:text-6xl font-bold text-center p-5 md:p-10">
                                                 <Trans t={t}
                                                     i18nKey="headline"
-                                                    components={[<span></span>,
-                                                    <span className="text-4xl md:text-7xl md:px-3 leading-10"></span>,
-                                                    <span className="text-4xl md:text-7xl md:px-3"></span>]}>
+                                                    components={[<span key={1}></span>,
+                                                    <span key={2} className="text-4xl md:text-7xl md:px-3 leading-10"></span>,
+                                                    <span key={3} className="text-4xl md:text-7xl md:px-3"></span>]}>
                                                     {t('headline')}
                                                 </Trans>
                                             </h1>
@@ -83,21 +83,21 @@ function HeroPage({ hero, t }) {
                                                 <p className="p-3">
                                                     <Trans t={t}
                                                         i18nKey="paragraph1"
-                                                        components={[<span className='font-bold'></span>]}>
+                                                        components={[<span key={4} className='font-bold'></span>]}>
                                                         {t('paragraph1')}
                                                     </Trans>
                                                 </p>
                                                 <p className="p-3">
                                                     <Trans t={t}
                                                         i18nKey="paragraph2"
-                                                        components={[<span className='font-bold'></span>]}>
+                                                        components={[<span key={5} className='font-bold'></span>]}>
                                                         {t('paragraph2')}
                                                     </Trans>
                                                 </p>
                                                 <p className="p-3">
                                                     <Trans t={t}
                                                         i18nKey="paragraph3"
-                                                        components={[<span className='font-bold'></span>]}>
+                                                        components={[<span key={6} className='font-bold'></span>]}>
                                                         {t('paragraph3')}
                                                     </Trans>
                                                 </p>
@@ -114,7 +114,7 @@ function HeroPage({ hero, t }) {
                                             <p className="pl-8">
                                                 <Trans t={t}
                                                     i18nKey="who_are_we_response"
-                                                    components={[<span className="font-semibold"></span>]}>
+                                                    components={[<span key={7} className="font-semibold"></span>]}>
                                                     {t('who_are_we_response')}
                                                 </Trans>
                                             </p>
@@ -124,7 +124,7 @@ function HeroPage({ hero, t }) {
                                             <p className="pl-8">
                                                 <Trans t={t}
                                                     i18nKey="what_are_we_doing_response"
-                                                    components={[<span className="font-semibold"></span>]}>
+                                                    components={[<span key={8} className="font-semibold"></span>]}>
                                                     {t('what_are_we_doing_response')}
                                                 </Trans>
                                             </p>
@@ -134,7 +134,7 @@ function HeroPage({ hero, t }) {
                                             <p className="pl-8">
                                                 <Trans t={t}
                                                     i18nKey="what_technologies_response"
-                                                    components={[<span className="font-semibold"></span>]}>
+                                                    components={[<span key={9} className="font-semibold"></span>]}>
                                                     {t('what_technologies_response')}
                                                 </Trans>
                                             </p>
@@ -180,28 +180,28 @@ function HeroPage({ hero, t }) {
                                                 <div>
                                                     <Trans t={t}
                                                         i18nKey="note1"
-                                                        components={[<strong></strong>]}>
+                                                        components={[<strong key={10}></strong>]}>
                                                         {t('note1')}
                                                     </Trans>
                                                 </div>
                                                 <div>
                                                     <Trans t={t}
                                                         i18nKey="note2"
-                                                        components={[<strong></strong>]}>
+                                                        components={[<strong key={11}></strong>]}>
                                                         {t('note2')}
                                                     </Trans>
                                                 </div>
                                                 <div>
                                                     <Trans t={t}
                                                         i18nKey="note3"
-                                                        components={[<strong></strong>]}>
+                                                        components={[<strong key={12}></strong>]}>
                                                         {t('note3')}
                                                     </Trans>
                                                 </div>
                                                 <div>
                                                     <Trans t={t}
                                                         i18nKey="note4"
-                                                        components={[<strong></strong>]}>
+                                                        components={[<strong key={13}></strong>]}>
                                                         {t('note4')}
                                                     </Trans>
                                                 </div>
