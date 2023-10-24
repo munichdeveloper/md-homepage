@@ -6,10 +6,11 @@ import Container from "../../components/container";
 import Layout from "../../components/layout";
 import PostTitle from "../../components/post-title";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Trans, withTranslation } from "next-i18next";
+import { Trans, useTranslation, withTranslation } from "next-i18next";
 
 function HeroPage({ hero, t }) {
     const router = useRouter()
+    const { t: footerTranslations } = useTranslation('footer') // omg...funkt nicht, wenn es im vorigen als Array mit drin ist..
 
     async function submitForm(event) {
         event.preventDefault();
@@ -56,7 +57,7 @@ function HeroPage({ hero, t }) {
     }
 
     return (
-        <Layout>
+        <Layout t={footerTranslations}>
             <div className="min-h-screen">
                 <div className="max-w-[80rem] lg:max-w-[100rem] mx-auto md:py-3">
                     <Container>
@@ -104,7 +105,7 @@ function HeroPage({ hero, t }) {
                                             </div>
                                             <div className="p-5 md:p-10 flex flex-col justify-center">
                                                 <div><Image className="rounded-[1rem] shadow-medium" alt="" width="700" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/person-points-camera-scaled.jpg" /></div>
-                                                <div className="text-sm"><a target="_blank" href="https://www.freepik.com/free-photo/person-points-camera_7608056.htm">Image by KamranAydinov</a> on Freepik</div>
+                                                <div className="text-sm text-[#00000070]"><a target="_blank" href="https://www.freepik.com/free-photo/person-points-camera_7608056.htm">Image by KamranAydinov</a> on Freepik</div>
                                             </div>
                                         </div>
                                     </div>
@@ -218,7 +219,7 @@ function HeroPage({ hero, t }) {
                                                 </div>
                                                 <div className="flex flex-col">
                                                     <div><Image className="rounded-[2rem] shadow-medium" alt="" width="500" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue-scaled.jpg" /></div>
-                                                    <div className="text-sm"><a target="_blank" href="https://www.freepik.com/free-photo/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue_54678251.htm#page=7&query=good%20luck&position=45&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>
+                                                    <div className="text-sm text-[#00000070]"><a target="_blank" href="https://www.freepik.com/free-photo/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue_54678251.htm#page=7&query=good%20luck&position=45&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>
                                                 </div>
                                             </div>
 
@@ -244,10 +245,10 @@ export const getServerSideProps: GetServerSideProps = async ({
         props: {
             hero,
             ...(await serverSideTranslations(locale ?? 'de', [
-                'hero'
+                'hero', 'footer'
             ]))
         }
     }
 }
 
-export default withTranslation('hero')(HeroPage)
+export default withTranslation(['hero', 'footer'])(HeroPage)

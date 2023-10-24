@@ -1,4 +1,6 @@
 import axios from "axios";
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from "next/router";
 import Container from "../components/container";
 import Layout from "../components/layout";
@@ -6,6 +8,8 @@ import TopBar from "../components/top-bar";
 
 export default function Contact() {
     const router = useRouter()
+    const { t } = useTranslation('contact')
+    const { t: footerTranslations } = useTranslation('footer') // omg...funkt nicht, wenn es im vorigen als Array mit drin ist..
 
     async function submitForm(event) {
         event.preventDefault();
@@ -50,39 +54,39 @@ export default function Contact() {
     }
 
     return (
-        <Layout>
+        <Layout t={footerTranslations}>
             <TopBar />
             <Container>
                 <div className="text-center p-5 pb-10">
-                    <p className="text-2xl md:text-4xl font-semibold">Worüber Du auch immer reden willst .. </p>
-                    <p className="text-xl md:text-2xl">hier kannst Du mich gerne unverbindlich kontaktieren!</p>
+                    <p className="text-2xl md:text-4xl font-semibold">{t('header')}</p>
+                    <p className="text-xl md:text-2xl">{t('subline')}</p>
                 </div>
                 <form onSubmit={submitForm}>
                     <div className="grid md:grid-cols-3 items-center">
-                        <div className="form-label">Name:</div>
+                        <div className="form-label">{t('name')}</div>
                         <div className="p-1 col-span-2">
-                            <input required name="name" className="form-input p-2" type="text" placeholder="Vollständiger Name" />
+                            <input required name="name" className="form-input p-2" type="text" placeholder={t('name_placeholder')} />
                         </div>
 
-                        <div className="form-label">E-Mail:</div>
+                        <div className="form-label">{t('email')}</div>
                         <div className="p-1 col-span-2">
-                            <input name="email" className="form-input p-2 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500" type="email" placeholder="E-Mail Addresse"
+                            <input name="email" className="form-input p-2 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500" type="email" placeholder={t('email_placeholder')}
                                 required
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                             />
                         </div>
 
-                        <div className="form-label">Worum geht es?</div>
+                        <div className="form-label">{t('message')}</div>
                         <div className="p-1 col-span-2">
                             <textarea required name="about" className="form-input p-2" rows={10}
-                                placeholder="Wobei kann ich Dich und Dein Vorhaben bzw. Dein Unternehmen unterstützen?" />
+                                placeholder={t('message_placeholder')} />
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center pt-5 md:pt-10">
                         <div>
                             <button
                                 className="border border-black border-2 border-dotted m-3 md:m-10 rounded-[2rem] p-3 bg-[#76D0D280] hover:scale-110 duration-300 hover:border-solid" type="submit">
-                                <span className="font-semibold text-xl">Absenden</span>
+                                <span className="font-semibold text-xl">{t('submit')}</span>
                             </button>
                         </div>
 
@@ -92,3 +96,13 @@ export default function Contact() {
         </Layout>
     )
 }
+
+export const getStaticProps = async ({
+    locale,
+}) => ({
+    props: {
+        ...(await serverSideTranslations(locale ?? 'de', [
+            'contact', 'footer'
+        ])),
+    },
+})

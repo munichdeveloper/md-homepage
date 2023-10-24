@@ -1,0 +1,11 @@
+{
+    "header": "Worüber Du auch immer reden willst ..",
+    "subline": "hier kannst Du mich gerne unverbindlich kontaktieren!",
+    "name": "Name:",
+    "name_placeholder": "Vollständiger Name",
+    "email": "E-Mail:",
+    "email_placeholder": "E-Mail Addresse",
+    "message": "Worum geht es?",
+    "message_placeholder": "Wobei kann ich Dich und Dein Vorhaben bzw. Dein Unternehmen unterstützen?",
+    "submit": "Absenden"
+}

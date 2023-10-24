@@ -6,11 +6,15 @@ import PostCard from "../components/post-card";
 import PostTitle from "../components/post-title";
 import TopBar from "../components/top-bar";
 import { getAllPostsForHome } from "../lib/api";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Blog({ posts }) {
     const router = useRouter()
+    const { t } = useTranslation('footer') // wtf...warum..
+
     return (
-        <Layout>
+        <Layout t={t}>
             <TopBar />
             <Container>
                 {router.isFallback ?
@@ -48,10 +52,14 @@ export const getStaticProps: GetStaticProps = async ({
     params,
     preview = false,
     previewData,
+    locale,
 }) => {
     const posts = await getAllPostsForHome(preview)
     return {
         props: {
+            ...(await serverSideTranslations(locale ?? 'de', [
+                'footer'
+            ])),
             preview,
             posts: posts.edges
         },

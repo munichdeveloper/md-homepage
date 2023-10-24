@@ -9,10 +9,11 @@ import TopBar from "../components/top-bar";
 
 export default function CampaignConfirmation() {
     const router = useRouter()
-    const { t } = useTranslation('campaign-confirmation')
+    const { t } = useTranslation(['campaign-confirmation'])
+    const { t: footerTranslations } = useTranslation('footer') // omg...funkt nicht, wenn es im vorigen als Array mit drin ist..
 
     return (
-        <Layout>
+        <Layout t={footerTranslations}>
             <TopBar />
             <Container>
                 {router.isFallback ? (
@@ -38,7 +39,7 @@ export default function CampaignConfirmation() {
                                             src="https://nft-miner.com/wp-content/uploads/2023/09/well-done-handsome-bearded-man-showing-thumb-up-praising-good-work-recommend-excellent-product-like-scaled.jpg"
                                             className="rounded-[999rem]"
                                         />
-                                        <div className="text-sm"><a target="_blank" href="https://de.freepik.com/fotos-kostenlos/gut-gemachter-gutaussehender-baertiger-mann-der-den-daumen-nach-oben-zeigt-und-gute-arbeit-lobt-empfiehlt-ein-ausgezeichnetes-produkt-wie_54678200.htm#&position=2&from_view=search&track=ais">Bild von benzoix</a> auf Freepik</div>
+                                        <div className="text-sm text-[#00000070]"><a target="_blank" href="https://de.freepik.com/fotos-kostenlos/gut-gemachter-gutaussehender-baertiger-mann-der-den-daumen-nach-oben-zeigt-und-gute-arbeit-lobt-empfiehlt-ein-ausgezeichnetes-produkt-wie_54678200.htm#&position=2&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>
                                     </div>
                                     <div className="text-center text-sm mt-5">
                                         <div>
@@ -66,7 +67,7 @@ export const getStaticProps = async ({
 }) => ({
     props: {
         ...(await serverSideTranslations(locale ?? 'de', [
-            'campaign-confirmation'
+            'campaign-confirmation', 'footer'
         ])),
     },
 })

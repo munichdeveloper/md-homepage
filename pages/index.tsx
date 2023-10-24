@@ -1,4 +1,4 @@
-import { withTranslation } from 'next-i18next';
+import { useTranslation, withTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from "next/link";
 import Container from "../components/container";
@@ -9,9 +9,9 @@ import Layout from "../components/layout";
 import TopBar from "../components/top-bar";
 
 function Home({ t }) {
-
+  const { t: footerTranslations } = useTranslation('footer') // wtf...warum..
   return (
-    <Layout>
+    <Layout t={footerTranslations}>
       <div className="min-h-screen">
         <TopBar />
         <div className="max-w-[80rem] lg:max-w-[100rem] mx-auto md:py-3" >
@@ -165,7 +165,7 @@ export const getStaticProps = async ({
 }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? 'de', [
-      'common', 'entry', 'feature'
+      'common', 'entry', 'feature', 'footer'
     ])),
   },
 })

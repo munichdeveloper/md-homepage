@@ -4,7 +4,7 @@ import Footer from './footer'
 import Meta from './meta'
 import SubscribeBox from './subscribe-box'
 
-export default function Layout({ children }) {
+export default function Layout({ children, t }) {
   return (
     <>
       <Meta />
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
         <main>{children}</main>
       </div>
       <SubscribeBox />
-      <Footer />
+      <Footer t={t} />
     </>
   )
 }
