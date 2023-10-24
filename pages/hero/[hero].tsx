@@ -245,7 +245,7 @@ export const getServerSideProps: GetServerSideProps = async ({
         props: {
             hero,
             ...(await serverSideTranslations(locale ?? 'de', [
-                'hero', 'footer'
+                'hero', 'footer', 'common'
             ]))
         }
     }

@@ -1,4 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -15,6 +17,8 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 
 export default function Post({ post, posts }) {
   const router = useRouter()
+  const { t } = useTranslation('footer')
+
   const morePosts = posts?.edges
 
   if (!router.isFallback && !post?.slug) {
@@ -22,7 +26,7 @@ export default function Post({ post, posts }) {
   }
 
   return (
-    <Layout>
+    <Layout t={t}>
       <Container>
         <Header />
         {router.isFallback ? (
@@ -65,11 +69,15 @@ export const getStaticProps: GetStaticProps = async ({
   params,
   preview = false,
   previewData,
+  locale
 }) => {
   const data = await getPostAndMorePosts(params?.slug, preview, previewData)
 
   return {
     props: {
+      ...(await serverSideTranslations(locale ?? 'de', [
+        'footer'
+      ])),
       preview,
       post: data.post,
       posts: data.posts,

@@ -11,7 +11,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Blog({ posts }) {
     const router = useRouter()
-    const { t } = useTranslation('footer') // wtf...warum..
+    const { t } = useTranslation('footer')
 
     return (
         <Layout t={t}>
@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps = async ({
     return {
         props: {
             ...(await serverSideTranslations(locale ?? 'de', [
-                'footer'
+                'footer', 'common'
             ])),
             preview,
             posts: posts.edges

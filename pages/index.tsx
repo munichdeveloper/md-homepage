@@ -9,7 +9,7 @@ import Layout from "../components/layout";
 import TopBar from "../components/top-bar";
 
 function Home({ t }) {
-  const { t: footerTranslations } = useTranslation('footer') // wtf...warum..
+  const { t: footerTranslations } = useTranslation('footer') // wtf?
   return (
     <Layout t={footerTranslations}>
       <div className="min-h-screen">

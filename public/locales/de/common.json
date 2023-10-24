@@ -78,5 +78,10 @@
             }
         }
     },
-    "read_more": "Mehr erfahren"
+    "read_more": "Mehr erfahren",
+
+    "subscribe": "Newsletter abonnieren:",
+    "mail_adress": "E-Mail Addresse",
+    "please_enter_an_email": "Bitte eine E-Mail Adresse eintragen",
+    "submit_newsletter": "Zum Newsletter anmelden"
 }

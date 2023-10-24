@@ -1,3 +1,5 @@
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import { useRouter } from "next/router";
 import Container from "../components/container";
@@ -7,9 +9,10 @@ import TopBar from "../components/top-bar";
 
 export default function SubscriptionConfirmation() {
     const router = useRouter()
+    const { t } = useTranslation('footer')
 
     return (
-        <Layout>
+        <Layout t={t}>
             <TopBar />
             <Container>
                 {router.isFallback ? (
@@ -33,6 +36,8 @@ export default function SubscriptionConfirmation() {
                                         src="https://nft-miner.com/wp-content/uploads/2023/09/well-done-handsome-bearded-man-showing-thumb-up-praising-good-work-recommend-excellent-product-like-scaled.jpg"
                                         className="rounded-[999rem]"
                                     />
+                                    <div className="text-sm text-[#00000070]"><a target="_blank" href="https://de.freepik.com/fotos-kostenlos/gut-gemachter-gutaussehender-baertiger-mann-der-den-daumen-nach-oben-zeigt-und-gute-arbeit-lobt-empfiehlt-ein-ausgezeichnetes-produkt-wie_54678200.htm#&position=2&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>
+
                                     <div className="text-center text-sm mt-5">
                                         <div>
                                             Solltest du keine Mail erhalten, schau bitte in Deinem Spam Ordner nach.
@@ -53,3 +58,13 @@ export default function SubscriptionConfirmation() {
         </Layout>
     )
 }
+
+export const getStaticProps = async ({
+    locale,
+}) => ({
+    props: {
+        ...(await serverSideTranslations(locale ?? 'de', [
+            'footer', 'common'
+        ])),
+    },
+})

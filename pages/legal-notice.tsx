@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -6,11 +7,10 @@ import Container from "../components/container";
 import Header from "../components/header";
 import Layout from "../components/layout";
 import PostTitle from "../components/post-title";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function LegalNotice() {
     const router = useRouter()
-    const { t } = useTranslation('footer') // wtf...warum..
+    const { t } = useTranslation('footer')
 
     return (
         <Layout t={t}>
@@ -46,7 +46,7 @@ export const getStaticProps = async ({
 }) => ({
     props: {
         ...(await serverSideTranslations(locale ?? 'de', [
-            'footer'
+            'footer', 'common'
         ])),
     },
 })

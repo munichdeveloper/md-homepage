@@ -67,7 +67,7 @@ export const getStaticProps = async ({
 }) => ({
     props: {
         ...(await serverSideTranslations(locale ?? 'de', [
-            'campaign-confirmation', 'footer'
+            'campaign-confirmation', 'footer', 'common'
         ])),
     },
 })

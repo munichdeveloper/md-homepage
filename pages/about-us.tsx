@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import TopBar from "../components/top-bar";
 
 export default function AboutUs() {
-    const { t } = useTranslation('footer') // wtf...warum..
+    const { t } = useTranslation(['footer', 'common'])
 
     return (
         <Layout t={t}>
@@ -27,7 +27,7 @@ export const getStaticProps = async ({
 }) => ({
     props: {
         ...(await serverSideTranslations(locale ?? 'de', [
-            'footer'
+            'footer', 'common'
         ])),
     },
 })

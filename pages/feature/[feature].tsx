@@ -1,8 +1,8 @@
 import { GetServerSideProps } from "next"
+import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Image from 'next/image'
 import { useRouter } from "next/router"
-import { useTranslation } from "next-i18next"
 import Container from "../../components/container"
 import Layout from "../../components/layout"
 import PostCard from "../../components/post-card"
@@ -13,8 +13,10 @@ import features from "../../features.json"
 function FeaturePage({ header, headerImage, subtitle, dePosts, enPosts }) {
     const router = useRouter()
     const { t } = useTranslation('feature')
+    const { t: footerTranslations } = useTranslation('footer')
+
     return (
-        <Layout>
+        <Layout t={footerTranslations}>
             <TopBar />
             <Container>
                 {router.isFallback ?
@@ -80,7 +82,7 @@ export const getServerSideProps: GetServerSideProps = async ({
     return {
         props: {
             ...(await serverSideTranslations(locale ?? 'de', [
-                'feature'
+                'feature', 'footer', 'common'
             ])),
             enPosts,
             header: features[feature]['header_text'],

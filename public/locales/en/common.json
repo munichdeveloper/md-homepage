@@ -78,5 +78,10 @@
             }
         }
     },
-    "read_more": "Read more"
+    "read_more": "Read more",
+
+    "subscribe": "Subscribe newsletter",
+    "mail_address": "E-Mail address",
+    "please_enter_an_email": "Please enter an E-Mail adress",
+    "submit_newsletter": "Subscribe to newsletter"
 }
