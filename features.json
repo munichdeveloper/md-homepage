@@ -1,7 +1,7 @@
 {
     "auth": {
         "header_text": "auth.title",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/2892856.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/2892856.jpg",
         "subtitle": "auth.subtitle",
         "own_resources": {},
         "external_resources": {
@@ -12,84 +12,84 @@
     },
     "nolowcode": {
         "header_text": "Mit No- oder Low-Code schnell und kosteneffizient einfache Webanwendungen erstellen",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/3094293.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/3094293.jpg",
         "subtitle": "",
         "own_resources": {},
         "external_resources": {}
     },
     "nolowcodemig": {
         "header_text": "Wie kriege ich meine Daten wieder aus der Low Code App heraus?",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-02_Single-06.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/Wavy_Tech-02_Single-06.jpg",
         "subtitle": "Bevor Daten in die Low-Code App kommen, fragt man sich besser, wie sie auch wieder raus kommen",
         "own_resources": {},
         "external_resources": {}
     },
     "nolowcodeconsulting": {
         "header_text": "Was kann man mit No- oder Low-Code machen?",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20945218.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20945218.jpg",
         "subtitle": "Ist mein Vorhaben für Low Code geeignet? Was sind Nachteile von No-Code?",
         "own_resources": {},
         "external_resources": {}
     },
     "ki": {
         "header_text": "Wie kann ich künstliche Intelligenz in meinem Unternehmen heute schon sinnvoll nutzen?",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/5326273.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/5326273.jpg",
         "subtitle": "Anwendungsfälle für KI in Deinem Unternehmen",
         "own_resources": {},
         "external_resources": {}
     },
     "hosting_monitoring": {
         "header_text": "Wie kann ich sicherstellen, dass meine Anwendungen online bleiben?",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20943798.jpg",
         "subtitle": "Wie merke ich, wenn es zu einem Fehler kommt?",
         "own_resources": {},
         "external_resources": {}
     },
     "softwaredevelopment_subscription": {
         "header_text": "Softwareentwicklung zum Festpreis",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20943798.jpg",
         "subtitle": "Wöchentliche & Monatliche Lieferungen, Individualentwicklung",
         "own_resources": {},
         "external_resources": {}
     },
     "reactdesign": {
         "header_text": "Vom Entwurf zur Webanwendung",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20943798.jpg",
         "subtitle": "Designs und Templates zum Leben erwecken",
         "own_resources": {},
         "external_resources": {}
     },
     "crm": {
         "header_text": "Customer Relationship Management muss nicht teuer sein",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20943798.jpg",
         "subtitle": "Leichtgewichtige CRM Lösungen als Alternative zu z.B.: Pipedrive",
         "own_resources": {},
         "external_resources": {}
     },
     "portfoliopage": {
         "header_text": "Portfolio Webseiten",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20943798.jpg",
         "subtitle": "für Bewerbungen oder als digitale Visitenkarte",
         "own_resources": {},
         "external_resources": {}
     },
     "scraping_data_mining": {
         "header_text": "Daten sind das neue Gold",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20943798.jpg",
         "subtitle": "Wie können Daten in meinem Unternehmen gewinnbringend genutzt werden?",
         "own_resources": {},
         "external_resources": {}
     },
     "landingpage": {
         "header_text": "Der erste Eindruck zählt, online sogar noch mehr.",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20943798.jpg",
         "subtitle": "Landingpages, die konvertieren",
         "own_resources": {},
         "external_resources": {}
     },
     "nextjsblog": {
         "header_text": "Blog auf Basis von NextJS",
-        "header_image": "https://nft-miner.com/wp-content/uploads/2023/10/20943798.jpg",
+        "header_image": "https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20943798.jpg",
         "subtitle": "Wordpress hat ausgedient",
         "own_resources": {},
         "external_resources": {}

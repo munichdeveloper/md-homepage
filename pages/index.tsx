@@ -35,20 +35,20 @@ function Home({ t }) {
               title={t('home.no_and_low_code.feature1.title')}
               text={t('home.no_and_low_code.feature1.text')}
               orderFirst={false}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/4421964.jpg    "
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/4421964.jpg    "
             />
             <Feature
               link="/feature/nolowcodemig"
               title={t('home.no_and_low_code.feature2.title')}
               text={t('home.no_and_low_code.feature2.text')}
               orderFirst={true}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/5995339-scaled.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/5995339-scaled.jpg"
             />
             <Feature
               link="/feature/nolowcodeconsulting"
               title={t('home.no_and_low_code.feature3.title')}
               text={t('home.no_and_low_code.feature3.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/4380747.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/4380747.jpg"
               orderFirst={false}
             />
           </div>
@@ -61,7 +61,7 @@ function Home({ t }) {
               link="/feature/ki"
               title={t('home.ki.feature1.title')}
               text={t('home.ki.feature1.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/36674.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/36674.jpg"
               orderFirst={true}
             />
           </div>
@@ -74,14 +74,14 @@ function Home({ t }) {
               link="/feature/landingpage"
               title={t('home.startup.feature1.title')}
               text={t('home.startup.feature1.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/OKP5E50.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/OKP5E50.jpg"
               orderFirst={false}
             />
             <Feature
               link="/feature/reactdesign"
               title={t('home.startup.feature2.title')}
               text={t('home.startup.feature2.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/8090.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/8090.jpg"
               orderFirst={true}
             />
             <Feature
@@ -89,14 +89,14 @@ function Home({ t }) {
               title={t('home.startup.feature3.title')}
               text={t('home.startup.feature3.text')}
               orderFirst={true}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/6597472-scaled.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/6597472-scaled.jpg"
             />
             <Feature
               link="/feature/auth"
               title={t('home.startup.feature4.title')}
               text={t('home.startup.feature4.text')}
               orderFirst={false}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/5101874.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/5101874.jpg"
             />
           </div>
         </Container>
@@ -108,7 +108,7 @@ function Home({ t }) {
               link="/feature/portfoliopage"
               title={t('home.creatives.feature1.title')}
               text={t('home.creatives.feature1.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20945195.jpg"
               orderFirst={false}
             />
           </div>
@@ -117,7 +117,7 @@ function Home({ t }) {
               link="/feature/crm"
               title={t('home.creatives.feature2.title')}
               text={t('home.creatives.feature2.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/20945195.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/20945195.jpg"
               orderFirst={true}
             />
           </div>
@@ -130,7 +130,7 @@ function Home({ t }) {
               link="/feature/scraping_data_mining"
               title={t('home.scraping.feature1.title')}
               text={t('home.scraping.feature1.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/2150405630.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/2150405630.jpg"
               orderFirst={false}
             />
           </div>
@@ -143,14 +143,14 @@ function Home({ t }) {
               link="/feature/softwaredevelopment_subscription"
               title={t('home.other.feature1.title')}
               text={t('home.other.feature1.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg"
               orderFirst={true}
             />
             <Feature
               link="/feature/hosting_monitoring"
               title={t('home.other.feature2.title')}
               text={t('home.other.feature2.text')}
-              imgSrc="https://nft-miner.com/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg"
+              imgSrc="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/Wavy_Tech-25_Single-04-3.jpg"
               orderFirst={false}
             />
           </div>

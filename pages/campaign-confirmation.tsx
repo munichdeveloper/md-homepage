@@ -36,7 +36,7 @@ export default function CampaignConfirmation() {
                                             width={700}
                                             height={300}
                                             alt="Image by benzoix"
-                                            src="https://nft-miner.com/wp-content/uploads/2023/09/well-done-handsome-bearded-man-showing-thumb-up-praising-good-work-recommend-excellent-product-like-scaled.jpg"
+                                            src="https://wordpress.munich-developer.de/wp-content/uploads/2023/09/well-done-handsome-bearded-man-showing-thumb-up-praising-good-work-recommend-excellent-product-like-scaled.jpg"
                                             className="rounded-[999rem]"
                                         />
                                         <div className="text-sm text-[#00000070]"><a target="_blank" href="https://de.freepik.com/fotos-kostenlos/gut-gemachter-gutaussehender-baertiger-mann-der-den-daumen-nach-oben-zeigt-und-gute-arbeit-lobt-empfiehlt-ein-ausgezeichnetes-produkt-wie_54678200.htm#&position=2&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>

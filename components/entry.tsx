@@ -17,7 +17,7 @@ export default function Entry() {
                     width={1049}
                     height={682}
                     quality={100}
-                    src="https://nft-miner.com/wp-content/uploads/2023/10/Screenshot-2023-10-04-231825.png" alt={'A cloud tag with the words: Senior Software Developer, Ten Years Experience, Java, Java Enterprise, ReactJS, NextJS, Automotive, Banking, Finance, E-Commerce, Manufacturing, Low-Code, No-Code, AI'} />
+                    src="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/Screenshot-2023-10-04-231825.png" alt={'A cloud tag with the words: Senior Software Developer, Ten Years Experience, Java, Java Enterprise, ReactJS, NextJS, Automotive, Banking, Finance, E-Commerce, Manufacturing, Low-Code, No-Code, AI'} />
             </div>
         </div>
     )

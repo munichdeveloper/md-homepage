@@ -104,7 +104,7 @@ function HeroPage({ hero, t }) {
                                                 </p>
                                             </div>
                                             <div className="p-5 md:p-10 flex flex-col justify-center">
-                                                <div><Image className="rounded-[1rem] shadow-medium" alt="" width="700" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/person-points-camera-scaled.jpg" /></div>
+                                                <div><Image className="rounded-[1rem] shadow-medium" alt="" width="700" height="300" src="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/person-points-camera-scaled.jpg" /></div>
                                                 <div className="text-sm text-[#00000070]"><a target="_blank" href="https://www.freepik.com/free-photo/person-points-camera_7608056.htm">Image by KamranAydinov</a> on Freepik</div>
                                             </div>
                                         </div>
@@ -218,7 +218,7 @@ function HeroPage({ hero, t }) {
                                                     {t('good_luck')} :-)
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <div><Image className="rounded-[2rem] shadow-medium" alt="" width="500" height="300" src="https://nft-miner.com/wp-content/uploads/2023/10/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue-scaled.jpg" /></div>
+                                                    <div><Image className="rounded-[2rem] shadow-medium" alt="" width="500" height="300" src="https://wordpress.munich-developer.de/wp-content/uploads/2023/10/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue-scaled.jpg" /></div>
                                                     <div className="text-sm text-[#00000070]"><a target="_blank" href="https://www.freepik.com/free-photo/amazed-man-showing-thumbsup-approve-praise-something-awesome-cool-thing-standing-light-blue_54678251.htm#page=7&query=good%20luck&position=45&from_view=search&track=ais">Image by benzoix</a> on Freepik</div>
                                                 </div>
                                             </div>

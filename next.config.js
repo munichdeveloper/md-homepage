@@ -18,7 +18,7 @@ module.exports = {
       '2.gravatar.com',
       'secure.gravatar.com',
       'i0.wp.com',
-      'nft-miner.com',
+      'wordpress.munich-developer.de',
       'res.cloudinary.com'
     ],
   },
